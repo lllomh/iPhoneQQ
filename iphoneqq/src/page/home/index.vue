@@ -1,7 +1,9 @@
 <template>
     <div>
 
-        111111111
+        <section class="section">
+
+        </section>
 
     </div>
 </template>
@@ -16,3 +18,8 @@
         }
     }
 </script>
+
+<style scoped>
+
+
+</style>

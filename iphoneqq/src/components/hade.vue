@@ -20,6 +20,11 @@
                     </div>
                     <div class="clar"></div>
                </div>
+               <div class="seach">
+                   <div class="u">
+                       <input type="text" value=""/>
+                   </div>
+               </div>
            </div>
        </header>
     </div>
@@ -71,6 +76,23 @@
     .lojia .y img{
         width: 20px;
         height: 20px;
+    }
+    .seach .u{
+        text-align: center;
+    }
+    .seach .u input{
+        margin-top: 2.3%;
+        width: 88.5%;
+        border: none;
+        background-color: #eeeff3;
+        background-image:url("../img/flxio.svg");
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: 4px;
+        padding: 1.6% 0;
+        padding-left: 7%;
+        border-radius: 3px;
+
     }
 
 </style>

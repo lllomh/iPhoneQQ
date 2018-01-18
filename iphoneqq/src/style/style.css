@@ -52,3 +52,6 @@ table {
 .clar{
     clear: both;
 }
+input{
+    outline:none;
+}
