@@ -55,3 +55,9 @@ table {
 input{
     outline:none;
 }
+body{
+    background: #f7f7f9;
+}
+.section_home{
+    background: #fff;
+}
