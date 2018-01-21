@@ -1,15 +1,13 @@
-
 <template>
     <div>
 
-        <mt-loadmore :top-method="loadTop" @translate-change="translateChange" @top-status-change="handleTopChange" ref="loadmore">
         <section class="section_home">
             <div class="y">
                 <ul class="ul">
                     <li class="acivLi active">
                         <div class="ioco flota-left">
                             <div class="h">
-                                <img src="/static/img/qunzhu.png" alt="">
+                                <img src="../../img/qunzhu.png" alt="">
                             </div>
                         </div>
                         <div class="text flota-left">
@@ -29,7 +27,7 @@
                     <li class="acivLi">
                         <div class="ioco flota-left">
                             <div class="h">
-                                <img src="/static/img/renyou.png" alt="">
+                                <img src="../../img/renyou.png" alt="">
                             </div>
                         </div>
                         <div class="text flota-left">
@@ -51,7 +49,7 @@
                     <li class="acivLi">
                         <div class="ioco flota-left">
                             <div class="h">
-                                <img src="/static/img/mycomu.png" alt="">
+                                <img src="../../img/mycomu.png" alt="">
                             </div>
                         </div>
                         <div class="text flota-left">
@@ -97,10 +95,6 @@
                 </ul>
             </div>
         </section>
-            <div slot="top" class="mint-loadmore-top">
-                <span v-show="topStatus === 'loading'"><mt-spinner type="snake"></mt-spinner></span>
-            </div>
-        </mt-loadmore>
 
     </div>
 </template>
@@ -112,9 +106,7 @@
         data () {
             return {
                 msg: 'Welcome to Your Vue.js App',
-                userlist:'',
-                topStatus: '',
-                moveTranslate: ""
+                userlist:''
             }
         },
         mounted(){
@@ -126,21 +118,7 @@
                 this.userlist = data.list;
 
                 console.log(this.userlist)
-            },
-
-
-            handleTopChange(status) {    //默认没有下拉动作
-                this.moveTranslate = 1;
-                this.topStatus = status;
-            },
-            loadTop() {
-
-                setTimeout(() => {       //动作完成
-
-                    this.$refs.loadmore.onTopLoaded();
-                }, 1500);
             }
-
         }
     }
 
@@ -211,3 +189,60 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+<template>
+    <div class="page-loadmore">
+        <h1 class="page-title">Pull down</h1>
+        <p class="page-loadmore-desc">在列表顶端, 按住 - 下拉 - 释放可以获取更多数据</p>
+        <p class="page-loadmore-desc">此例请使用手机查看</p>
+
+        <mt-loadmore :top-method="loadTop" @translate-change="translateChange" @top-status-change="handleTopChange" ref="loadmore">
+            <ul class="page-loadmore-list">
+                <li >12饿13123</li>
+            </ul>
+            <div slot="top" class="mint-loadmore-top">
+                <span v-show="topStatus === 'loading'"><mt-spinner type="snake"></mt-spinner></span>
+            </div>
+        </mt-loadmore>
+
+    </div>
+</template>
+
+<style>
+</style>
+<script type="text/babel">
+    export default {
+        data() {
+            return {
+
+                topStatus: '',
+                moveTranslate: ""
+            };
+        },
+
+        methods: {
+            handleTopChange(status) {    //默认没有下拉动作
+                this.moveTranslate = 1;
+                this.topStatus = status;
+            },
+            loadTop() {
+
+                setTimeout(() => {       //动作完成
+
+                    this.$refs.loadmore.onTopLoaded();
+                }, 1500);
+            }
+        },
+
+    };
+</script>

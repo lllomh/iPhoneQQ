@@ -5,7 +5,7 @@
                <div class="h">
                     <div class="loimg flota-left">
                         <div class="y">
-                            <img src="../img/logo.jpg" alt="">
+                            <img src="/static/img/logo.jpg" alt="">
                         </div>
                     </div>
                     <div class="lomisg flota-left">
@@ -15,7 +15,7 @@
                     </div>
                     <div class="lojia flota-left">
                         <div class="y">
-                            <img src="../img/jia.svg" alt="">
+                            <img src="/static/img/jia.svg" alt="">
                         </div>
                     </div>
                     <div class="clar"></div>
@@ -85,7 +85,7 @@
         width: 88.5%;
         border: none;
         background-color: #eeeff3;
-        background-image:url("../img/flxio.svg");
+        background-image:url("/static/img/flxio.svg");
         background-repeat: no-repeat;
         background-size: 20px 20px;
         background-position: 4px;

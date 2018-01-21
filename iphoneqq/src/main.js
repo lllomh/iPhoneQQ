@@ -3,8 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Mint from 'mint-ui';
-Vue.use(Mint);
+import Mint from 'mint-ui'
+import '../static/mint-ui/style.css'
+Vue.use(Mint); //注册 mint插件
 
 
 Vue.config.productionTip = false;
