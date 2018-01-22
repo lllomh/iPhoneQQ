@@ -2,7 +2,7 @@
 <template>
     <div>
 
-        <mt-loadmore :top-method="loadTop" @translate-change="translateChange" @top-status-change="handleTopChange" ref="loadmore">
+        <mt-loadmore :top-method="loadTop" @top-status-change="handleTopChange" ref="loadmore">
         <section class="section_home">
             <div class="y">
                 <ul class="ul">
@@ -157,6 +157,9 @@
         padding-bottom: 11%;
         width: 50px;
         height: 50px;
+    }
+    .section_home ul li{
+        background: #fff;
     }
     .ioco{
         width: 20%;

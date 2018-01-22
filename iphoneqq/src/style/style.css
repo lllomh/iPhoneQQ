@@ -59,5 +59,8 @@ body{
     background: #f7f7f9;
 }
 .section_home{
-    background: #fff;
+  min-height: 1000px;
+}
+html,body{
+    height: 100%;
 }
