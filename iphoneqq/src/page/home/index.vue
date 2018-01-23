@@ -48,7 +48,7 @@
                         <div class="clar"></div>
                     </li>
 
-                    <li class="acivLi">
+                    <li class="acivLi" >
                         <div class="ioco flota-left">
                             <div class="h">
                                 <img src="/static/img/mycomu.png" alt="">
@@ -141,7 +141,7 @@
                 }, 1500);
             }
 
-        }
+    }
     }
 
 </script>
@@ -178,7 +178,7 @@
     }
 
     .active{
-        background: #f0f1f2;
+        background: #f0f1f2!important;
     }
     .text .u{
         margin-left: 1%;

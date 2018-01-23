@@ -59,7 +59,7 @@ body{
     background: #f7f7f9;
 }
 .section_home{
-  min-height: 1000px;
+    background: #fff;
 }
 html,body{
     height: 100%;
