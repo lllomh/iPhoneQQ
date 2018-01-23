@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3397e00b-4953-45b3-8d9b-b9c0e1ea3da4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iphoneqq/src/page/peopleList/test.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iphoneqq/src/components/foter.vue" afterPath="$PROJECT_DIR$/iphoneqq/src/components/foter.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iphoneqq/config/index.js" afterPath="$PROJECT_DIR$/iphoneqq/config/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iphoneqq/src/components/hade.vue" afterPath="$PROJECT_DIR$/iphoneqq/src/components/hade.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iphoneqq/src/page/home/index.vue" afterPath="$PROJECT_DIR$/iphoneqq/src/page/home/index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iphoneqq/src/page/peopleList/index.vue" afterPath="$PROJECT_DIR$/iphoneqq/src/page/peopleList/index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iphoneqq/src/router/index.js" afterPath="$PROJECT_DIR$/iphoneqq/src/router/index.js" />
     </list>
     <ignored path="iPhoneQQ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +29,8 @@
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/iphoneqq/src/page/home/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="233" column="29" selection-start-line="233" selection-start-column="29" selection-end-line="233" selection-end-column="29" />
+            <state relative-caret-position="327">
+              <caret line="210" column="32" selection-start-line="210" selection-start-column="26" selection-end-line="210" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -72,7 +69,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iphoneqq/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="238">
               <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -82,21 +79,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foter.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iphoneqq/src/components/foter.vue">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iphoneqq/config/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="187">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iphoneqq/index.html">
+      <file leaf-file-name="foter.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iphoneqq/src/components/foter.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="-153">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -115,8 +112,8 @@
       <file leaf-file-name="hade.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iphoneqq/src/components/hade.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+            <state relative-caret-position="1394">
+              <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -163,13 +160,13 @@
         <option value="$PROJECT_DIR$/iphoneqq/src/data/data.json" />
         <option value="$PROJECT_DIR$/iphoneqq/src/main.js" />
         <option value="$PROJECT_DIR$/iphoneqq/src/style/style.css" />
-        <option value="$PROJECT_DIR$/iphoneqq/config/index.js" />
         <option value="$PROJECT_DIR$/iphoneqq/index.html" />
-        <option value="$PROJECT_DIR$/iphoneqq/src/components/hade.vue" />
         <option value="$PROJECT_DIR$/iphoneqq/src/components/foter.vue" />
         <option value="$PROJECT_DIR$/iphoneqq/src/page/peopleList/index.vue" />
         <option value="$PROJECT_DIR$/iphoneqq/src/router/index.js" />
         <option value="$PROJECT_DIR$/iphoneqq/src/page/peopleList/test.vue" />
+        <option value="$PROJECT_DIR$/iphoneqq/config/index.js" />
+        <option value="$PROJECT_DIR$/iphoneqq/src/components/hade.vue" />
         <option value="$PROJECT_DIR$/iphoneqq/src/page/home/index.vue" />
       </list>
     </option>
@@ -580,12 +577,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516246222504</updated>
-      <workItem from="1516246224065" duration="61363000" />
+      <workItem from="1516246224065" duration="62270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61363000" />
+    <option name="totallyTimeSpent" value="62270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -716,38 +713,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iphoneqq/src/components/hade.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/iphoneqq/src/components/foter.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iphoneqq/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iphoneqq/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#125#167#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -783,6 +753,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/iphoneqq/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#125#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iphoneqq/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iphoneqq/src/components/hade.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/iphoneqq/src/page/home/text.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
@@ -793,8 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/iphoneqq/src/page/home/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="233" column="29" selection-start-line="233" selection-start-column="29" selection-end-line="233" selection-end-column="29" />
+        <state relative-caret-position="327">
+          <caret line="210" column="32" selection-start-line="210" selection-start-column="26" selection-end-line="210" selection-end-column="32" />
           <folding />
         </state>
       </provider>

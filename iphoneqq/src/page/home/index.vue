@@ -223,7 +223,7 @@
         width: 100%;
     }
     .bj{
-        background: red;
+        background: #ff3b30;
         float: right;
         font-size: 20px;
         width: 34px;

@@ -90,6 +90,9 @@
     }
     .seach .u input{
         margin-top: 2.3%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 88.5%;
         border: none;
         background-color: #eeeff3;
