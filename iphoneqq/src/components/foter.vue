@@ -29,7 +29,6 @@
     </div>
 </template>
 
-
 <style>
     .footer .f{
         border-top: solid 1px #dedfe0;
