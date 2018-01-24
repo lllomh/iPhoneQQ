@@ -34,7 +34,7 @@
                            <span class="prompt" v-if="key.num != 0">{{key.num}}</span>
                       </div>
                         <div class="bj flota-left" @click="del('','index')">删除</div>
-                        <div class="bj yd flota-left" @click="reade(inedx)">{{readText}}</div>
+                        <div class="bj yd flota-left" @click="reade(inedx)">{{key.text}}</div>
                         <div class="bj zd flota-left">置顶</div>
                         <div class="clar"></div>
                         <div class="udlie"></div>
@@ -79,42 +79,48 @@
                         "name":"群助手",
                         "p":"javascript技术交流:[图片]",
                         "time":"昨天",
-                        "num":"1"
+                        "num":"0",
+                        "text":"标为未读"
                     },
                     {
                         "src":"renyou.png",
                         "name":"我的电脑",
                         "p":"图片]IMG_1195_JPG",
                         "time":"前天",
-                        "num":"1"
+                        "num":"0",
+                        "text":"标为未读"
                     },
                     {
                         "src":"mycomu.png",
                         "name":"我的其他QQ账号",
                         "p":"暂无消息",
                         "time":"昨天",
-                        "num":"1"
+                        "num":"0",
+                        "text":"标为未读"
                     },
                     {
                         "src":"qiuyue.png",
                         "name":"秋月",
                         "p":"[QQ电话]未接听,点击回拨",
                         "time":"星期二",
-                        "num":"1"
+                        "num":"0",
+                        "text":"标为未读"
                     },
                     {
                         "src":"hu.jpg",
                         "name":"胡燕杰",
                         "p":"在不在",
                         "time":"01-07",
-                        "num":"1"
+                        "num":"0",
+                        "text":"标为未读"
                     },
                     {
                         "src":"qiuyue.png",
                         "name":"秋丹",
                         "p":"好",
                         "time":"01-02",
-                        "num":"1"
+                        "num":"0",
+                        "text":"标为未读"
                     }
                 ],
                 topStatus: '',
@@ -173,7 +179,6 @@
 
             },
             del(name,idx){
-                alert(idx);
                 alert("确认删除"+name);
                 this.list.splice(idx,1);                                        //删除List这条数据 DOM随之更新渲染
                 var container = document.querySelector('.swipeleft');           //将展开的DOM归位 除掉样式类
@@ -181,13 +186,18 @@
                 this.expansion=null;
             },
             reade(id){ //已读操作
+                if(this.read==true) {
+                    this.className = "acivLi";
+                    this.list[id].num = 1;
+                    this.list[id].text = "标为已读";
+                    this.read=false;
 
-
-                this.list[id].num = 0;
-
-
-//                    this.readText = "标记为已读";
-
+                }else {
+                    this.className = "acivLi";
+                    this.list[id].num = 0;
+                    this.list[id].text = "标为未读";
+                    this.read=true;
+                }
 
             }
 
