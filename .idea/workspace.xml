@@ -27,9 +27,11 @@
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/iphoneqq/src/page/home/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="160" column="25" selection-start-line="160" selection-start-column="25" selection-end-line="160" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="589">
+              <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
+              <folding>
+                <element signature="e#4529#5987#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -575,12 +577,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516246222504</updated>
-      <workItem from="1516246224065" duration="64387000" />
+      <workItem from="1516246224065" duration="67850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64387000" />
+    <option name="totallyTimeSpent" value="67850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -788,9 +790,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/iphoneqq/src/page/home/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="160" column="25" selection-start-line="160" selection-start-column="25" selection-end-line="160" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="589">
+          <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
+          <folding>
+            <element signature="e#4529#5987#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -11,12 +11,6 @@
         <mt-loadmore :top-method="loadTop" @top-status-change="handleTopChange" ref="loadmore">
         <section class="section_home">
             <div class="y">
-                <ul class="ul">
-
-
-
-
-                   </ul>
                    <ul class="tmp ul">
                     <li class="acivLi" v-for="(key,val) in list">
                        <div class="mancent flota-left">
@@ -38,16 +32,14 @@
                         </div>
                            <div class="clar"></div>
                       </div>
-                        <div class="bj flota-left" @click="del('11',val)">删除</div>
+                        <div class="bj flota-left" @click="del('',val)">删除</div>
+                        <div class="bj yd flota-left" @click="reade()">{{readText}}</div>
+                        <div class="bj zd flota-left">置顶</div>
                         <div class="clar"></div>
                         <div class="udlie"></div>
                         <div class="clar"></div>
-
                     </li>
-
-                     </ul>
-
-
+                  </ul>
             </div>
         </section>
             <div slot="top" class="mint-loadmore-top">
@@ -121,6 +113,9 @@
                 topStatus: '',
                 moveTranslate: "",
                 expansion : null,
+                readText:"1",
+                read:true
+
             }
         },
         mounted(){
@@ -153,14 +148,13 @@
                         X = event.changedTouches[0].pageX;                          //记录当前触控点横坐标
                         if($this.expansion){                                       //判断是否展开，如果展开则收起
                             $this.expansion.className = "";
-                            container[0].className="active";
                         }
                         if(X - x > 10){                                             //右滑
-                            this.className = "";
+                            this.className = "acivLi";
                             container[0].className="active";  //右滑收起
                         }
                         if(x - X > 10){                                             //左滑
-                            this.className = "swipeleft";                           //左滑展开
+                            this.className = "acivLi swipeleft";                           //左滑展开
                             $this.expansion = this;
 
                         }
@@ -177,6 +171,11 @@
                 var container = document.querySelector('.swipeleft');           //将展开的DOM归位 除掉样式类
                 container.className="";
                 this.expansion=null;
+            },
+            reade(){ //已读操作
+              let redD = this.read;
+                alert(redD)
+
             }
 
     }
@@ -191,7 +190,6 @@
     .bj{
         background: #ff3b30;
         float: right;
-        font-size: 20px;
         width: 34px;
         height: 40px;
         line-height: 40px;
@@ -202,6 +200,15 @@
         color: #fff;
         font-size: 17px;
         text-align: center;
+    }
+    .yd{
+        margin-right: -53%;
+        width: 95px;
+        background: #ff9c00;
+    }
+    .zd{
+        margin-right: -19%;
+        background: #c7c7cc;
     }
     .tmp li i{float:right;width:15%;text-align:center;background:#E2421B;color:#fff;}
     .tmp li{
