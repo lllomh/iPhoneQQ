@@ -12,68 +12,10 @@
         <section class="section_home">
             <div class="y">
                 <ul class="ul">
-                    <li class="acivLi active">
-                        <div class="ioco flota-left">
-                            <div class="h">
-                                <img src="/static/img/qunzhu.png" alt="">
-                            </div>
-                        </div>
-                        <div class="text flota-left">
-                            <div class="u">
-                                <h3>群助手</h3>
-                                <p>2b年代里的一朵2b花:[图片]</p>
-                            </div>
-                        </div>
-                        <div class="time flota-left">
-                            <div class="t">
-                                <time>昨天</time>
-                            </div>
-                        </div>
-                        <div class="clar"></div>
-                    </li>
 
-                    <li class="acivLi">
-                        <div class="ioco flota-left">
-                            <div class="h">
-                                <img src="/static/img/renyou.png" alt="">
-                            </div>
-                        </div>
-                        <div class="text flota-left">
-                            <div class="u">
-                                <h3>我的电脑</h3>
-                                <p>[图片]IMG_1195_JPG</p>
-                            </div>
-                        </div>
-                        <div class="time flota-left">
-                            <div class="t">
-                                <time>昨天</time>
-                            </div>
-                        </div>
-                        <div class="clar"></div>
-                    </li>
 
-                    <li class="acivLi" >
-                        <div class="ioco flota-left">
-                            <div class="h">
-                                <img src="/static/img/mycomu.png" alt="">
-                            </div>
-                        </div>
-                        <div class="text flota-left">
-                            <div class="u">
-                                <h3>我的其他QQ账号</h3>
-                                <p>暂无新消息</p>
-                            </div>
-                        </div>
-                        <div class="time flota-left">
-                            <div class="t">
-                                <time>昨天</time>
-                            </div>
-                        </div>
-                        <div class="clar"></div>
-                        <div class="udlie"></div>
-                        <div class="clar"></div>
 
-                    </li>
+
                    </ul>
                    <ul class="tmp ul">
                     <li class="acivLi" v-for="(key,val) in list">
@@ -139,7 +81,24 @@
             return {
                 msg: 'Welcome to Your Vue.js App',
                 list:[
-
+                    {
+                        "src":"qunzhu.png",
+                        "name":"群助手",
+                        "p":"javascript技术交流:[图片]",
+                        "time":"昨天"
+                    },
+                    {
+                        "src":"renyou.png",
+                        "name":"我的电脑",
+                        "p":"图片]IMG_1195_JPG",
+                        "time":"前天"
+                    },
+                    {
+                        "src":"mycomu.png",
+                        "name":"我的其他QQ账号",
+                        "p":"暂无消息",
+                        "time":"昨天"
+                    },
                     {
                         "src":"qiuyue.png",
                         "name":"秋月",
@@ -194,16 +153,23 @@
                         X = event.changedTouches[0].pageX;                          //记录当前触控点横坐标
                         if($this.expansion){                                       //判断是否展开，如果展开则收起
                             $this.expansion.className = "";
+                            container[0].className="active";
                         }
                         if(X - x > 10){                                             //右滑
-                            this.className = "";                                    //右滑收起
+                            this.className = "";
+                            container[0].className="active";  //右滑收起
                         }
                         if(x - X > 10){                                             //左滑
                             this.className = "swipeleft";                           //左滑展开
                             $this.expansion = this;
+
                         }
                     });
+
+
                 }
+                container[0].className="active"
+
             },
             del(name,idx){
                 alert("确认删除"+name);
