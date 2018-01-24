@@ -12,7 +12,7 @@
         <section class="section_home">
             <div class="y">
                    <ul class="tmp ul">
-                    <li class="acivLi" v-for="(key,val) in list">
+                    <li class="acivLi" v-for="(key,inedx) in list">
                        <div class="mancent flota-left">
                         <div class="ioco pop flota-left">
                             <div class="h">
@@ -31,9 +31,10 @@
                             </div>
                         </div>
                            <div class="clar"></div>
+                           <span class="prompt" v-if="key.num != 0">{{key.num}}</span>
                       </div>
-                        <div class="bj flota-left" @click="del('',val)">删除</div>
-                        <div class="bj yd flota-left" @click="reade()">{{readText}}</div>
+                        <div class="bj flota-left" @click="del('','index')">删除</div>
+                        <div class="bj yd flota-left" @click="reade(inedx)">{{readText}}</div>
                         <div class="bj zd flota-left">置顶</div>
                         <div class="clar"></div>
                         <div class="udlie"></div>
@@ -77,43 +78,49 @@
                         "src":"qunzhu.png",
                         "name":"群助手",
                         "p":"javascript技术交流:[图片]",
-                        "time":"昨天"
+                        "time":"昨天",
+                        "num":"1"
                     },
                     {
                         "src":"renyou.png",
                         "name":"我的电脑",
                         "p":"图片]IMG_1195_JPG",
-                        "time":"前天"
+                        "time":"前天",
+                        "num":"1"
                     },
                     {
                         "src":"mycomu.png",
                         "name":"我的其他QQ账号",
                         "p":"暂无消息",
-                        "time":"昨天"
+                        "time":"昨天",
+                        "num":"1"
                     },
                     {
                         "src":"qiuyue.png",
                         "name":"秋月",
                         "p":"[QQ电话]未接听,点击回拨",
-                        "time":"星期二"
+                        "time":"星期二",
+                        "num":"1"
                     },
                     {
                         "src":"hu.jpg",
                         "name":"胡燕杰",
                         "p":"在不在",
-                        "time":"01-07"
+                        "time":"01-07",
+                        "num":"1"
                     },
                     {
                         "src":"qiuyue.png",
                         "name":"秋丹",
                         "p":"好",
-                        "time":"01-02"
+                        "time":"01-02",
+                        "num":"1"
                     }
                 ],
                 topStatus: '',
                 moveTranslate: "",
                 expansion : null,
-                readText:"1",
+                readText:"",
                 read:true
 
             }
@@ -166,15 +173,21 @@
 
             },
             del(name,idx){
+                alert(idx);
                 alert("确认删除"+name);
                 this.list.splice(idx,1);                                        //删除List这条数据 DOM随之更新渲染
                 var container = document.querySelector('.swipeleft');           //将展开的DOM归位 除掉样式类
                 container.className="";
                 this.expansion=null;
             },
-            reade(){ //已读操作
-              let redD = this.read;
-                alert(redD)
+            reade(id){ //已读操作
+
+
+                this.list[id].num = 0;
+
+
+//                    this.readText = "标记为已读";
+
 
             }
 
@@ -186,6 +199,7 @@
 <style scoped>
     .mancent{
         width: 100%;
+        position: relative;
     }
     .bj{
         background: #ff3b30;
@@ -209,6 +223,22 @@
     .zd{
         margin-right: -19%;
         background: #c7c7cc;
+    }
+    .prompt{
+        position: absolute;
+        top:48%;
+        right: 4%;
+        background: #f74c31;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        border-radius: 50%;
+        display: block;
+        font-size: 12px;
+        text-align: center;
+        color: #fff;
+
+
     }
     .tmp li i{float:right;width:15%;text-align:center;background:#E2421B;color:#fff;}
     .tmp li{
