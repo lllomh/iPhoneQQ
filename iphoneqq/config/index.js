@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: './',  //打包的时候 这里改成 ./   运行的时候 要去掉这个点,不然会报错
+    assetsPublicPath: '/',  //打包的时候 这里改成 ./   运行的时候 要去掉这个点,不然会报错
     proxyTable: {},
 
     // Various Dev Server settings

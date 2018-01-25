@@ -214,20 +214,17 @@
     .bj{
         background: #ff3b30;
         float: right;
-        width: 34px;
-        height: 40px;
-        line-height: 40px;
         margin-right: -70%;
-        padding: 14px 17px;
-        padding-bottom: 13px;
+        padding: 10% 4%;
+
         border-bottom: solid 1px #dedfe0;
         color: #fff;
         font-size: 17px;
         text-align: center;
     }
     .yd{
-        margin-right: -53%;
-        width: 95px;
+        margin-right: -54%;
+        padding: 10% 10%;
         background: #ff9c00;
     }
     .zd{
