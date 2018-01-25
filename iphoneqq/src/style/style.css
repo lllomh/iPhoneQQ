@@ -58,6 +58,7 @@ input{
 body{
     background: #f7f7f9;
     max-width: 540px;
+    min-width: 320px;
     margin: auto;
 }
 .section_home{
