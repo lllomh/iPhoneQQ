@@ -164,7 +164,7 @@
                         }
                         if(X - x > 10){                                             //右滑
                             this.className = "acivLi";
-                            container[0].className="active";  //右滑收起
+                            container[0].className="active";                        //右滑收起
                         }
                         if(x - X > 10){                                             //左滑
                             this.className = "acivLi swipeleft";                           //左滑展开
@@ -178,7 +178,7 @@
                 container[0].className="active"
 
             },
-            del(name,idx){
+            del(name,idx){  //删除
                 alert("确认删除"+name);
                 this.list.splice(idx,1);                                        //删除List这条数据 DOM随之更新渲染
                 var container = document.querySelector('.swipeleft');           //将展开的DOM归位 除掉样式类
@@ -186,23 +186,25 @@
                 this.expansion=null;
             },
             reade(id){ //已读操作
-                if(this.read==true) {
-                    this.className = "acivLi";
-                    this.list[id].num = 1;
+                var container = document.querySelectorAll('.tmp li');
+                if(this.list[id].num == 0) {
                     this.list[id].text = "标为已读";
-                    this.read=false;
+                    container[id].className="acivLi";
+                    this.list[id].num = 1;
 
                 }else {
-                    this.className = "acivLi";
-                    this.list[id].num = 0;
+
                     this.list[id].text = "标为未读";
-                    this.read=true;
+                    container[id].className="acivLi";
+                    this.list[id].num = 0;
                 }
 
             },
             tops(id){                      //置顶排序
+                var container = document.querySelectorAll('.tmp li');
                 this.list.splice(0,0,(this.list[id]));
                 this.list.splice(id+1, 1);
+                container[id].className="acivLi";
             }
 
     }
