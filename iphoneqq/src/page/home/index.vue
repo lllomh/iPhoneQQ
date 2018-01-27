@@ -12,7 +12,7 @@
         <section class="section_home">
             <div class="y">
                    <ul class="tmp ul">
-                    <li class="acivLi" v-for="(key,inedx) in list">
+                    <li class="acivLi" v-for="(key,index) in list">
                        <div class="mancent flota-left">
                         <div class="ioco pop flota-left">
                             <div class="h">
@@ -33,9 +33,9 @@
                            <div class="clar"></div>
                            <span class="prompt" v-if="key.num != 0">{{key.num}}</span>
                       </div>
-                        <div class="bj flota-left" @click="del('','index')">删除</div>
-                        <div class="bj yd flota-left" @click="reade(inedx)">{{key.text}}</div>
-                        <div class="bj zd flota-left">置顶</div>
+                        <div class="bj flota-left" @click="del('',index)">删除</div>
+                        <div class="bj yd flota-left" @click="reade(index)">{{key.text}}</div>
+                        <div class="bj zd flota-left" @click="tops(index)">置顶</div>
                         <div class="clar"></div>
                         <div class="udlie"></div>
                         <div class="clar"></div>
@@ -199,6 +199,10 @@
                     this.read=true;
                 }
 
+            },
+            tops(id){                      //置顶排序
+                this.list.splice(0,0,(this.list[id]));
+                this.list.splice(id+1, 1);
             }
 
     }
