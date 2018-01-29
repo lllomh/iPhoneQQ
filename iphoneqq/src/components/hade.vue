@@ -73,11 +73,11 @@
         text-align: center;
         color: #fff;
         font-size: 19px;
-        margin-top: 37%;
+        margin-top: 52%;
     }
     .lojia .y{
         text-align: right;
-        margin-top: 18%;
+        margin-top: 12%;
         margin-right: 7%;
 
     }

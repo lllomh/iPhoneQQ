@@ -126,8 +126,6 @@
                 topStatus: '',
                 moveTranslate: "",
                 expansion : null,
-                readText:"",
-                read:true
 
             }
         },
