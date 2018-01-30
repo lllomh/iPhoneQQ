@@ -177,7 +177,6 @@
 
             },
             del(name,idx){  //删除
-                alert("确认删除"+name);
                 this.list.splice(idx,1);                                        //删除List这条数据 DOM随之更新渲染
                 var container = document.querySelector('.swipeleft');           //将展开的DOM归位 除掉样式类
                 container.className="";
