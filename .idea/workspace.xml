@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3397e00b-4953-45b3-8d9b-b9c0e1ea3da4" name="Default" comment="" />
+    <list default="true" id="3397e00b-4953-45b3-8d9b-b9c0e1ea3da4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iphoneqq/src/page/peopleList/index.vue" afterPath="$PROJECT_DIR$/iphoneqq/src/page/peopleList/index.vue" />
+    </list>
     <ignored path="iPhoneQQ.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -21,11 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iphoneqq/src/page/home/index.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-592">
-              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+              <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/iphoneqq/src/page/peopleList/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -54,8 +67,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iphoneqq/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="510">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
                 <element signature="e#125#167#0" expanded="true" />
@@ -147,12 +160,12 @@
         <option value="$PROJECT_DIR$/iphoneqq/src/style/style.css" />
         <option value="$PROJECT_DIR$/iphoneqq/index.html" />
         <option value="$PROJECT_DIR$/iphoneqq/src/components/foter.vue" />
-        <option value="$PROJECT_DIR$/iphoneqq/src/page/peopleList/index.vue" />
         <option value="$PROJECT_DIR$/iphoneqq/src/router/index.js" />
         <option value="$PROJECT_DIR$/iphoneqq/src/page/peopleList/test.vue" />
         <option value="$PROJECT_DIR$/iphoneqq/config/index.js" />
         <option value="$PROJECT_DIR$/iphoneqq/src/components/hade.vue" />
         <option value="$PROJECT_DIR$/iphoneqq/src/page/home/index.vue" />
+        <option value="$PROJECT_DIR$/iphoneqq/src/page/peopleList/index.vue" />
       </list>
     </option>
   </component>
@@ -569,12 +582,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516246222504</updated>
       <workItem from="1516246224065" duration="81068000" />
-      <workItem from="1517076003911" duration="2626000" />
+      <workItem from="1517076003911" duration="3667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83694000" />
+    <option name="totallyTimeSpent" value="84735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -630,6 +643,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -685,13 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iphoneqq/src/page/peopleList/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="86" column="13" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/iphoneqq/src/page/home/text.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3740">
@@ -705,17 +712,6 @@
         <state relative-caret-position="1649">
           <caret line="97" column="110" selection-start-line="97" selection-start-column="62" selection-end-line="97" selection-end-column="110" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iphoneqq/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#125#167#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -762,7 +758,26 @@
     <entry file="file://$PROJECT_DIR$/iphoneqq/src/page/home/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-592">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iphoneqq/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#125#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iphoneqq/src/page/peopleList/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding />
         </state>
       </provider>
