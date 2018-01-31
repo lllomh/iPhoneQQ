@@ -9,9 +9,42 @@
 <template>
     <div>
         <section class="section_list">
-            11
+            <div class="l">
+                <ul class="ul">
+                   <li>
+                       <span class="float-left">新朋友</span><span class="float-right color"> > </span>
+                       <div class="clar"></div>
+                   </li>
+                   <li>
+                       <span class="float-left">创建群聊</span><span class="float-right color"> > </span>
+                       <div class="clar"></div>
+                   </li>
+
+                </ul>
+            </div>
         </section>
 
     </div>
 </template>
 
+<style scoped>
+    .section_list{
+        background: #fff;
+    }
+    .ul li:first-child{
+        border-top:solid 1px #dedfe0;
+    }
+     .ul li{
+         border-bottom: solid 1px #dedfe0;
+         padding-right: 2.3%;
+         padding-left: 2.3%;
+     }
+    .ul li span{
+        font-size: 16px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .ul .color{
+        color: #c7c7c7;
+    }
+</style>

@@ -12,19 +12,19 @@
         <footer>
             <div class="footer">
                 <div class="f">
-                     <div class="left_msg flota-left q_width">
+                     <div class="left_msg float-left q_width">
                          <div class="rentou">
                              <div class="q">
                                  <img src="/static/img/xiaolian.png" alt="">
                              </div>
                          </div>
                      </div>
-                     <div class="midde_poe flota-left q_width">
+                     <div class="midde_poe float-left q_width">
                          <div class="q">
                              <img src="/static/img/renwu.png" alt="">
                          </div>
                      </div>
-                     <div class="right_msg flota-left q_width">
+                     <div class="right_msg float-left q_width">
                          <div class="q">
                              <img src="/static/img/xingxing.png" alt="">
                          </div>

@@ -43,10 +43,10 @@ table {
 }
 
 
-.flota-left{
+.float-left{
     float: left;
 }
-.flota-rigjt{
+.float-right{
     float: right;
 }
 .clar{
@@ -66,5 +66,6 @@ body{
 }
 html,body{
     height: 100%;
+
 
 }

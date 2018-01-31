@@ -11,17 +11,17 @@
        <header>
            <div class="header">
                <div class="h">
-                    <div class="loimg flota-left">
+                    <div class="loimg float-left">
                         <div class="y">
                             <img src="/static/img/logo.jpg" alt="">
                         </div>
                     </div>
-                    <div class="lomisg flota-left">
+                    <div class="lomisg float-left">
                         <div  class="y">
                             消息
                         </div>
                     </div>
-                    <div class="lojia flota-left">
+                    <div class="lojia float-left">
                         <div class="y">
                             <img src="/static/img/jia.svg" alt="">
                         </div>
@@ -30,7 +30,7 @@
                </div>
                <div class="seach">
                    <div class="u">
-                       <input type="text" value=""/>
+                       <input type="text" placeholder="搜索" value=""/>
                    </div>
                </div>
            </div>
@@ -43,7 +43,10 @@
 <style>
 
     @import url('../style/style.css');
+.header{
+    background: #fff;
 
+}
  .header .h{
      width: 100%;
      height: auto;
@@ -87,6 +90,7 @@
     }
     .seach .u{
         text-align: center;
+        padding-bottom: 2.3%;
     }
     .seach .u input{
         margin-top: 2.3%;
@@ -103,6 +107,7 @@
         padding: 1.6% 0;
         padding-left: 7%;
         border-radius: 3px;
+
 
     }
 

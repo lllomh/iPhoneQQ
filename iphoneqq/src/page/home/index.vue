@@ -13,19 +13,19 @@
             <div class="y">
                    <ul class="tmp ul">
                     <li class="acivLi" v-for="(key,index) in list">
-                       <div class="mancent flota-left">
-                        <div class="ioco pop flota-left">
+                       <div class="mancent float-left">
+                        <div class="ioco pop float-left">
                             <div class="h">
                                 <img :src="`/static/img/${key.src}`" alt="">
                             </div>
                         </div>
-                        <div class="text flota-left">
+                        <div class="text float-left">
                             <div class="u">
                                 <h3>{{key.name}}</h3>
                                 <p>{{key.p}}</p>
                             </div>
                         </div>
-                        <div class="time flota-left">
+                        <div class="time float-left">
                             <div class="t">
                                 <time>{{key.time}}</time>
                             </div>
@@ -33,9 +33,9 @@
                            <div class="clar"></div>
                            <span class="prompt" v-if="key.num != 0">{{key.num}}</span>
                       </div>
-                        <div class="bj flota-left" @click="del('',index)">删除</div>
-                        <div class="bj yd flota-left" @click="reade(index)">{{key.text}}</div>
-                        <div class="bj zd flota-left" @click="tops(index)">置顶</div>
+                        <div class="bj float-left" @click="del('',index)">删除</div>
+                        <div class="bj yd float-left" @click="reade(index)">{{key.text}}</div>
+                        <div class="bj zd float-left" @click="tops(index)">置顶</div>
                         <div class="clar"></div>
                         <div class="udlie"></div>
                         <div class="clar"></div>
@@ -210,6 +210,9 @@
 </script>
 
 <style scoped>
+    .section_home{
+        background: #fff;
+    }
     .mancent{
         width: 100%;
         position: relative;
@@ -256,9 +259,6 @@
     }
     .swipeleft{transform:translateX(-70%);-webkit-transform:translateX(-70%);}
 
-    .section_home .y{
-        margin-top: 2.3%;
-    }
     .section_home .y .h{
         padding-left: 18%;
         margin-top: 14%;

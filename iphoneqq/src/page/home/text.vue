@@ -5,18 +5,18 @@
             <div class="y">
                 <ul class="ul">
                     <li class="acivLi active">
-                        <div class="ioco flota-left">
+                        <div class="ioco float-left">
                             <div class="h">
                                 <img src="../../img/qunzhu.png" alt="">
                             </div>
                         </div>
-                        <div class="text flota-left">
+                        <div class="text float-left">
                             <div class="u">
                                 <h3>群助手</h3>
                                 <p>2b年代里的一朵2b花:[图片]</p>
                             </div>
                         </div>
-                        <div class="time flota-left">
+                        <div class="time float-left">
                             <div class="t">
                                 <time>昨天</time>
                             </div>
@@ -25,18 +25,18 @@
                     </li>
 
                     <li class="acivLi">
-                        <div class="ioco flota-left">
+                        <div class="ioco float-left">
                             <div class="h">
                                 <img src="../../img/renyou.png" alt="">
                             </div>
                         </div>
-                        <div class="text flota-left">
+                        <div class="text float-left">
                             <div class="u">
                                 <h3>我的电脑</h3>
                                 <p>[图片]IMG_1195_JPG</p>
                             </div>
                         </div>
-                        <div class="time flota-left">
+                        <div class="time float-left">
                             <div class="t">
                                 <time>昨天</time>
                             </div>
@@ -47,18 +47,18 @@
                     </li>
 
                     <li class="acivLi">
-                        <div class="ioco flota-left">
+                        <div class="ioco float-left">
                             <div class="h">
                                 <img src="../../img/mycomu.png" alt="">
                             </div>
                         </div>
-                        <div class="text flota-left">
+                        <div class="text float-left">
                             <div class="u">
                                 <h3>我的其他QQ账号</h3>
                                 <p>暂无新消息</p>
                             </div>
                         </div>
-                        <div class="time flota-left">
+                        <div class="time float-left">
                             <div class="t">
                                 <time>昨天</time>
                             </div>
@@ -70,18 +70,18 @@
 
 
                     <li class="acivLi" v-for="(key,val) in userlist">
-                        <div class="ioco pop flota-left">
+                        <div class="ioco pop float-left">
                             <div class="h">
                                 <img :src="`/static/img/${key.src}`" alt="">
                             </div>
                         </div>
-                        <div class="text flota-left">
+                        <div class="text float-left">
                             <div class="u">
                                 <h3>{{key.name}}</h3>
                                 <p>{{key.p}}</p>
                             </div>
                         </div>
-                        <div class="time flota-left">
+                        <div class="time float-left">
                             <div class="t">
                                 <time>{{key.time}}</time>
                             </div>
