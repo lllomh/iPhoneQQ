@@ -211,7 +211,7 @@
 
 <style scoped>
     .section_home{
-        background: #fff;
+        background: #ffffff;
     }
     .mancent{
         width: 100%;
