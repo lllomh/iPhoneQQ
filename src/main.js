@@ -1,5 +1,6 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+// hobo
 import Vue from 'vue'
 import App from './App'
 import router from './router'
@@ -11,6 +12,7 @@ Vue.use(Mint); //注册 mint插件
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   router,
