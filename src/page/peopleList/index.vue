@@ -27,6 +27,10 @@
     </div>
 </template>
 
+<script>
+
+</script>
+
 <style scoped>
     .section_list{
         background: #fff;
