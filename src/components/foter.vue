@@ -15,13 +15,13 @@
                      <div class="left_msg float-left q_width">
                          <div class="rentou">
                              <div class="q">
-                                 <img src="/static/img/xiaolian.png" alt="">
+                                 <router-link to="/"><img src="/static/img/xiaolian.png" alt=""></router-link>
                              </div>
                          </div>
                      </div>
                      <div class="midde_poe float-left q_width">
                          <div class="q">
-                             <img src="/static/img/renwu.png" alt="">
+                             <router-link to="/list"> <img src="/static/img/renwu.png" alt=""></router-link>
                          </div>
                      </div>
                      <div class="right_msg float-left q_width">
