@@ -124,18 +124,6 @@ npm run build
 # 部分截图
 
 
-
-### 商铺列表页
-
-<img src="http://test.fe.ptdev.cn/elm/screenshots/msite.gif" width="365" height="619"/>
-
-
-### 商铺筛选页
-
-<img src="http://test.fe.ptdev.cn/elm/screenshots/food.gif" width="365" height="619"/>
-
-
-
 ### 整体演示(半成品'正在更新中')
 
 <img src="http://app.gonghaibo.cn/static/img/yanshi/GIF.gif" width="365" height="619"/>
