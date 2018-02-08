@@ -30,7 +30,7 @@ npm install
 ```
 npm run dev
 
-访问 http://localhost:8080
+访问 http://www.qq.com:8080   这里要配置一下 host / 要么就要改掉 config/index 中的地址改回 localhost. 我是为了手机代理方便改了网址.
 ```
 
 
