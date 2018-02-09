@@ -2,10 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 Vue.use(Router);
 
-import home from '@/page/home/index'  //导入主页 home 组件
-import list from '@/page/peopleList/index'
-import test from '@/page/peopleList/test'
-
+const home = r => require.ensure([], () => r(require('@/page/home/index')), 'home');
+const list = r => require.ensure([], () => r(require('@/page/peopleList/index')), 'list');
+const test = r => require.ensure([], () => r(require('@/page/peopleList/test')), 'test');
 
 export default new Router({
   mode: 'history',
