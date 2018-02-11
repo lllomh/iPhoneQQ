@@ -22,9 +22,10 @@
 
                 </ul>
                 <div class="content">
-                    <ul>
+                    <ul class="ulsd">
                         <li>
-                          test1
+                            <router-link to="/">好友</router-link>
+                            <span></span>
                         </li>
                     </ul>
                 </div>
@@ -57,5 +58,11 @@
     }
     .ul .color{
         color: #c7c7c7;
+    }
+    .content li{
+        font-size: 16px;
+    }
+    ul.ulsd li{
+        border: none;
     }
 </style>
