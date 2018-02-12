@@ -27,7 +27,24 @@
                             <router-link to="/">好友</router-link>
                             <span></span>
                         </li>
+                        <li>
+                            <router-link to="/">好友</router-link>
+                            <span></span>
+                        </li>
+                        <li>
+                            <router-link to="/">好友</router-link>
+                            <span></span>
+                        </li>
+                        <li>
+                            <router-link to="/">好友</router-link>
+                            <span></span>
+                        </li>
+                        <li>
+                            <router-link to="/">好友</router-link>
+                            <span></span>
+                        </li>
                     </ul>
+                    <div style="clear: both"></div>
                 </div>
             </div>
         </section>
@@ -64,5 +81,10 @@
     }
     ul.ulsd li{
         border: none;
+    }
+    .ulsd li{
+        float: left;
+        width: 20%;
+        text-align: center;
     }
 </style>
