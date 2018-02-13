@@ -47,7 +47,7 @@
                     <div style="clear: both"></div>
                 </div>
             </div>
-        </section>
+        </section>`
 
     </div>
 </template>
@@ -86,7 +86,6 @@
         float: left;
         width: 20%;
         text-align: center;
-        padding-bottom: 2.5%;
         padding-top: 2.5%;
     }
     .ulsd li a{
@@ -95,6 +94,10 @@
     .ulsd li span{
         display: block;
         height: 2px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12%;
 
     }
     .span_atv span{
