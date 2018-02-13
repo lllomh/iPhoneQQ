@@ -43,6 +43,7 @@
                             <router-link to="/">公众号</router-link>
                             <span></span>
                         </li>
+                        <ul style="clear: both"></ul>
                     </ul>
                     <div style="clear: both"></div>
                 </div>
@@ -90,6 +91,9 @@
     }
     .ulsd li a{
         color: #777777;
+    }
+    .ulsd{
+        border-bottom: solid 1px #dedfe0;
     }
     .ulsd li span{
         display: block;
