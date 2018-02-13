@@ -23,7 +23,7 @@
                 </ul>
                 <div class="content">
                     <ul class="ulsd">
-                        <li>
+                        <li class="span_atv">
                             <router-link to="/">好友</router-link>
                             <span></span>
                         </li>
@@ -86,5 +86,18 @@
         float: left;
         width: 20%;
         text-align: center;
+        padding-bottom: 2.5%;
+        padding-top: 2.5%;
+    }
+    .ulsd li a{
+        color: #777777;
+    }
+    .ulsd li span{
+        display: block;
+        height: 2px;
+
+    }
+    .span_atv span{
+        background: red;
     }
 </style>
