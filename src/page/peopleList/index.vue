@@ -28,19 +28,19 @@
                             <span></span>
                         </li>
                         <li>
-                            <router-link to="/">好友</router-link>
+                            <router-link to="/">群聊</router-link>
                             <span></span>
                         </li>
                         <li>
-                            <router-link to="/">好友</router-link>
+                            <router-link to="/">设备</router-link>
                             <span></span>
                         </li>
                         <li>
-                            <router-link to="/">好友</router-link>
+                            <router-link to="/">通讯录</router-link>
                             <span></span>
                         </li>
                         <li>
-                            <router-link to="/">好友</router-link>
+                            <router-link to="/">公众号</router-link>
                             <span></span>
                         </li>
                     </ul>
