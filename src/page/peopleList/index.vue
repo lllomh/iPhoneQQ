@@ -33,15 +33,15 @@
 
                     <div class="man_content">
                         <div class="tab-card" style="display: block">
-                            <ul class="ul">
+                            <ul class="ul fend_ul">
                                 <li>
                                     <span class="float-left color"> > </span>
-                                    <span class="float-left">新朋友</span>
+                                    <span class="float-left fnd">新朋友</span>
                                     <div class="clar"></div>
                                 </li>
                                 <li>
                                     <span class="float-left color"> > </span>
-                                    <span class="float-left">创建群聊</span>
+                                    <span class="float-left fnd">创建群聊</span>
                                     <div class="clar"></div>
                                 </li>
 
@@ -154,5 +154,16 @@
     }
    .active{
         visibility: visible!important;
+    }
+    ul.fend_ul li{
+        border: none;
+    }
+    ul.fend_ul li:first-child{
+        border: none;
+    }
+    .fend_ul .fnd{
+        display: inline-block;
+        margin-left: 2%;
+
     }
 </style>
