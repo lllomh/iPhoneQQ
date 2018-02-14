@@ -12,7 +12,7 @@
         <section class="section_home">
             <div class="y">
                    <ul class="tmp ul">
-                    <li class="acivLi" v-for="(key,index) in list">
+                    <li class="acivLi" v-for="(key,index) in list" ref="ss">
                        <div class="mancent float-left">
                         <div class="ioco pop float-left">
                             <div class="h">
@@ -67,81 +67,41 @@
         resizeRoot();
     };
 
-//    import data from '../../data/data.json'
     export default {
         name: 'home',
         data () {
             return {
                 msg: 'Welcome to Your Vue.js App',
-                list:[
-                    {
-                        "src":"qunzhu.png",
-                        "name":"群助手",
-                        "p":"javascript技术交流:[图片]",
-                        "time":"昨天",
-                        "num":"0",
-                        "text":"标为未读"
-                    },
-                    {
-                        "src":"renyou.png",
-                        "name":"我的电脑",
-                        "p":"图片]IMG_1195_JPG",
-                        "time":"前天",
-                        "num":"0",
-                        "text":"标为未读"
-                    },
-                    {
-                        "src":"mycomu.png",
-                        "name":"我的其他QQ账号",
-                        "p":"暂无消息",
-                        "time":"昨天",
-                        "num":"0",
-                        "text":"标为未读"
-                    },
-                    {
-                        "src":"qiuyue.png",
-                        "name":"秋月",
-                        "p":"[QQ电话]未接听,点击回拨",
-                        "time":"星期二",
-                        "num":"0",
-                        "text":"标为未读"
-                    },
-                    {
-                        "src":"hu.jpg",
-                        "name":"胡燕杰",
-                        "p":"在不在",
-                        "time":"01-07",
-                        "num":"0",
-                        "text":"标为未读"
-                    },
-                    {
-                        "src":"qiuyue.png",
-                        "name":"秋丹",
-                        "p":"好",
-                        "time":"01-02",
-                        "num":"0",
-                        "text":"标为未读"
-                    }
-                ],
+                list:[],
                 topStatus: '',
                 moveTranslate: "",
                 expansion : null,
+                iscood:1
 
             }
         },
         mounted(){
             this.fetchData();
-            this.leftoch();
+
+
         },
-        watch:{
-            '$route':'fetchData'
+        updated(){
+            this.leftoch();
         },
         methods: {
             fetchData(){
+                this.$http.get('../static/data/data.json', {
+                    params: {
+                        OPT: '305'
+                    }
+                }).then(res => {
+                    this.list=res.data.list;
+                    console.log(this.list);
 
-                this.$http.get('@/data/data.josn', data => {
-                    this.$set('news', data.data);
+                },err =>{
+                    console.log('error')
                 });
+
             },
             handleTopChange(status) {    //默认没有下拉动作
                 this.moveTranslate = 1;
@@ -149,44 +109,43 @@
             },
 
             loadTop() {
-
                 setTimeout(() => {       //动作完成
-
                     this.$refs.loadmore.onTopLoaded();
                 }, 1500);
             },
-
             leftoch(){
-                var $this=this;														//将$this保存 区分以下触发事件的this
-                var container = document.querySelectorAll('.tmp li');
-
-                for(var i = 0; i < container.length; i++){                          //为每个特定DOM元素绑定touchstart touchmove时间监听 判断滑动方向
-                    var x,  X;
-                    container[i].addEventListener('touchstart', function(event) {   //记录初始触控点横坐标
-                        x = event.changedTouches[0].pageX;
-                    });
-                    container[i].addEventListener('touchmove', function(event){
-                        X = event.changedTouches[0].pageX;                          //记录当前触控点横坐标
-                        if($this.expansion){                                       //判断是否展开，如果展开则收起
-                            $this.expansion.className = "";
-                        }
-                        if(X - x > 10){                                             //右滑
-                            this.className = "acivLi";
-                            container[0].className="active";                        //右滑收起
-                        }
-                        if(x - X > 10){                                             //左滑
-                            this.className = "acivLi swipeleft";                           //左滑展开
-                            $this.expansion = this;
-
-                        }
-                    });
+                    var $this=this;														//将$this保存 区分以下触发事件的this
+                    var container =this.$refs.ss;
+                    var int =container.length;
 
 
-                }
-                container[0].className="active"
+                    for(var i = 0; i < int; i++){                          //为每个特定DOM元素绑定touchstart touchmove时间监听 判断滑动方向
+                        var x,  X;
+                        container[i].addEventListener('touchstart', function(event) {   //记录初始触控点横坐标
+                            x = event.changedTouches[0].pageX;
+                        });
+                        container[i].addEventListener('touchmove', function(event){
+                            X = event.changedTouches[0].pageX;                          //记录当前触控点横坐标
+                            if($this.expansion){                                       //判断是否展开，如果展开则收起
+                                $this.expansion.className = "";
+                            }
+                            if(X - x > 10){                                             //右滑
+                                this.className = "acivLi";
+                                container[0].className="active";                        //右滑收起
+                            }
+                            if(x - X > 10){                                             //左滑
+                                this.className = "acivLi swipeleft";                           //左滑展开
+                                $this.expansion = this;
+
+                            }
+                        });
+
+                    }
+                    container[0].className="active"
+
 
             },
-            del(name,idx){  //删除
+            del(idx){  //删除
                 this.list.splice(idx,1);                                        //删除List这条数据 DOM随之更新渲染
                 var container = document.querySelector('.swipeleft');           //将展开的DOM归位 除掉样式类
                 container.className="";
@@ -219,7 +178,8 @@
 
 </script>
 
-<style scoped>
+<style>
+    @import url('../../data/ss.css');
     .section_home{
         background: #ffffff;
     }
