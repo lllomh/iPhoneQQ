@@ -31,8 +31,12 @@
                     </ul>
                     <div style="clear: both"></div>
 
-                    <div class="man_content ">
-                        <div class="tab-card" style="display: block">1</div>
+                    <div class="man_content">
+                        <div class="tab-card" style="display: block">
+                            <ul class="cen_m">
+                                <li>1</li>
+                            </ul>
+                        </div>
                         <div class="tab-card">2</div>
                         <div class="tab-card">3</div>
                         <div class="tab-card">4</div>
