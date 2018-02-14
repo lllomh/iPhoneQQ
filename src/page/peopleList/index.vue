@@ -37,11 +37,7 @@
                                 <li>
                                     <span class="float-left color"> > </span>
                                     <span class="float-left fnd">新朋友</span>
-                                    <div class="clar"></div>
-                                </li>
-                                <li>
-                                    <span class="float-left color"> > </span>
-                                    <span class="float-left fnd">创建群聊</span>
+                                    <span class="float-right color suz"> 0/0 </span>
                                     <div class="clar"></div>
                                 </li>
 
@@ -165,5 +161,8 @@
         display: inline-block;
         margin-left: 2%;
 
+    }
+    .fend_ul .suz{
+        display: inline-block;margin-right: 2%;
     }
 </style>

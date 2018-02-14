@@ -130,9 +130,19 @@
             }
         },
         mounted(){
+            this.fetchData();
             this.leftoch();
         },
+        watch:{
+            '$route':'fetchData'
+        },
         methods: {
+            fetchData(){
+
+                this.$http.get('@/data/data.josn', data => {
+                    this.$set('news', data.data);
+                });
+            },
             handleTopChange(status) {    //默认没有下拉动作
                 this.moveTranslate = 1;
                 this.topStatus = status;

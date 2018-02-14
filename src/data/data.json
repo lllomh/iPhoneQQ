@@ -1,26 +1,55 @@
 {
 
-    "list":[
-
-                {
-                    "src":"qiuyue.png",
-                    "name":"秋月",
-                    "p":"[QQ电话]未接听,点击回拨",
-                    "time":"星期二"
-                },
-                {
-                    "src":"hu.jpg",
-                    "name":"胡燕杰",
-                    "p":"在不在",
-                    "time":"01-07"
-                },
-                {
-                    "src":"qiuyue.png",
-                    "name":"秋丹",
-                    "p":"好",
-                    "time":"01-02"
-                }
-          ]
+    "data":[
+      {
+        "src":"qunzhu.png",
+        "name":"群助手",
+        "p":"javascript技术交流:[图片]",
+        "time":"昨天",
+        "num":"0",
+        "text":"标为未读"
+      },
+      {
+        "src":"renyou.png",
+        "name":"我的电脑",
+        "p":"图片]IMG_1195_JPG",
+        "time":"前天",
+        "num":"0",
+        "text":"标为未读"
+      },
+      {
+        "src":"mycomu.png",
+        "name":"我的其他QQ账号",
+        "p":"暂无消息",
+        "time":"昨天",
+        "num":"0",
+        "text":"标为未读"
+      },
+      {
+        "src":"qiuyue.png",
+        "name":"秋月",
+        "p":"[QQ电话]未接听,点击回拨",
+        "time":"星期二",
+        "num":"0",
+        "text":"标为未读"
+      },
+      {
+        "src":"hu.jpg",
+        "name":"胡燕杰",
+        "p":"在不在",
+        "time":"01-07",
+        "num":"0",
+        "text":"标为未读"
+      },
+      {
+        "src":"qiuyue.png",
+        "name":"秋丹",
+        "p":"好",
+        "time":"01-02",
+        "num":"0",
+        "text":"标为未读"
+      }
+    ]
 }
 
 
