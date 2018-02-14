@@ -22,42 +22,66 @@
 
                 </ul>
                 <div class="content">
-                    <ul class="ulsd">
-                        <li class="span_atv">
-                            <router-link to="/list/s">好友</router-link>
-                            <span></span>
-                        </li>
-                        <li>
-                            <router-link to="/">群聊</router-link>
-                            <span></span>
-                        </li>
-                        <li>
-                            <router-link to="/">设备</router-link>
-                            <span></span>
-                        </li>
-                        <li>
-                            <router-link to="/">通讯录</router-link>
-                            <span></span>
-                        </li>
-                        <li>
-                            <router-link to="/">公众号</router-link>
-                            <span></span>
+                    <ul class="ulsd tabs">
+                        <li class="span_atv"  v-for="(tab,index) in tabsName">
+                           <a href="javascript:void(0)" @click="tabsSwitch(index)">{{tab.name}}</a>
+                            <span v-bind:class="{active:tab.isActive}"></span>
                         </li>
                         <ul style="clear: both"></ul>
                     </ul>
                     <div style="clear: both"></div>
-                    <div class="man_content">
+
+                    <div class="man_content ">
+                        <div class="tab-card" style="display: block">1</div>
+                        <div class="tab-card">2</div>
+                        <div class="tab-card">3</div>
+                        <div class="tab-card">4</div>
+                        <div class="tab-card">5</div>
 
                     </div>
                 </div>
             </div>
         </section>
-
     </div>
 </template>
 
 <script>
-
+   export default{
+       name: 'list',
+       data () {
+           return {
+               msg: 'Welcome to Your Vue.js App',
+               tabsName: [{
+                   name: "好友",
+                   isActive: true
+               }, {
+                   name: "群聊",
+                   isActive: false
+               }, {
+                   name: "设备",
+                   isActive: false
+               }, {
+                   name: "通讯录",
+                   isActive: false
+               }, {
+                   name: "公众号",
+                   isActive: false
+               }]
+           }
+       },
+       methods: {
+           tabsSwitch: function(tabIndex) {
+               var tabCardCollection = document.querySelectorAll(".tab-card"),
+                   len = tabCardCollection.length;
+               for(var i = 0; i < len; i++) {
+                   tabCardCollection[i].style.display = "none";
+                   this.tabsName[i].isActive = false;
+               }
+               this.tabsName[tabIndex].isActive = true;
+               tabCardCollection[tabIndex].style.display = "block";
+           }
+       }
+   }
 </script>
 
 <style scoped>
@@ -105,9 +129,16 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 12%;
+        visibility: hidden;
 
     }
     .span_atv span{
         background: red;
+    }
+     .tab-card {
+        display: none;
+    }
+   .active{
+        visibility: visible!important;
     }
 </style>
