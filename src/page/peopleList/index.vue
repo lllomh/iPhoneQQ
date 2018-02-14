@@ -24,7 +24,7 @@
                 <div class="content">
                     <ul class="ulsd">
                         <li class="span_atv">
-                            <router-link to="/">好友</router-link>
+                            <router-link to="/list/s">好友</router-link>
                             <span></span>
                         </li>
                         <li>
@@ -46,9 +46,12 @@
                         <ul style="clear: both"></ul>
                     </ul>
                     <div style="clear: both"></div>
+                    <div class="man_content">
+
+                    </div>
                 </div>
             </div>
-        </section>`
+        </section>
 
     </div>
 </template>
