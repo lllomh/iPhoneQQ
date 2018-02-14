@@ -33,8 +33,18 @@
 
                     <div class="man_content">
                         <div class="tab-card" style="display: block">
-                            <ul class="cen_m">
-                                <li>1</li>
+                            <ul class="ul">
+                                <li>
+                                    <span class="float-left color"> > </span>
+                                    <span class="float-left">新朋友</span>
+                                    <div class="clar"></div>
+                                </li>
+                                <li>
+                                    <span class="float-left color"> > </span>
+                                    <span class="float-left">创建群聊</span>
+                                    <div class="clar"></div>
+                                </li>
+
                             </ul>
                         </div>
                         <div class="tab-card">2</div>
