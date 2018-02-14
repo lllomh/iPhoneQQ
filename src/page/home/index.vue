@@ -143,7 +143,6 @@
                     }
                     container[0].className="active"
 
-
             },
             del(idx){  //删除
                 this.list.splice(idx,1);                                        //删除List这条数据 DOM随之更新渲染
@@ -179,7 +178,6 @@
 </script>
 
 <style>
-    @import url('../../data/ss.css');
     .section_home{
         background: #ffffff;
     }
