@@ -143,7 +143,7 @@
 
     }
     .span_atv span{
-        background: red;
+        background: red!important;
     }
      .tab-card {
         display: none;
