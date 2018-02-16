@@ -9,7 +9,7 @@ __注：此项目纯属个人瞎搞，不涉及QQ等问题。__
 
 
 ## 技术栈
-vue2.0  + vue-router + webpack + ES6/7 + svg
+vue2.0  + vue-resource + vue-router + webpack + ES6/7 + svg
 
 
 
