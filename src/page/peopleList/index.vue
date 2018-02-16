@@ -34,10 +34,10 @@
                     <div class="man_content">
                         <div class="tab-card" style="display: block">
                             <ul class="ul fend_ul">
-                                <li>
+                                <li v-for="(list,index) in friends">
                                     <span class="float-left color"> > </span>
-                                    <span class="float-left fnd">新朋友</span>
-                                    <span class="float-right color suz"> 0/0 </span>
+                                    <span class="float-left fnd">{{list.name}}</span>
+                                    <span class="float-right color suz"> {{list.Online}}/{{list.whole}} </span>
                                     <div class="clar"></div>
                                 </li>
 
@@ -61,7 +61,31 @@
        data () {
            return {
                msg: 'Welcome to Your Vue.js App',
-               tabsName:[]
+               tabsName:[],
+               friends:[
+                       {
+                      name:"特别关心",
+                      Online:3,
+                      whole:8,
+                      isShow:false
+
+                       },
+                      {
+                       name:"QQ网友",
+                       Online:4,
+                       whole:10,
+                       isShow:false
+
+                      },
+                      {
+                       name:"大学好友",
+                       Online:2,
+                       whole:5,
+                       isShow:false
+
+                      }
+
+               ]
 
            }
        },
@@ -77,7 +101,7 @@
                    }
                }).then(res => {
                    this.tabsName=res.data.tabsName;
-                   console.log(this.tabsName);
+                   console.log(this.tabsName.__proto__);
 
                },err =>{
                    console.log('error')
