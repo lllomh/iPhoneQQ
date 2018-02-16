@@ -83,7 +83,6 @@
         mounted(){
             this.fetchData();
 
-
         },
         updated(){
             this.leftoch();

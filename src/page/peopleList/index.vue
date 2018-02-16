@@ -61,25 +61,29 @@
        data () {
            return {
                msg: 'Welcome to Your Vue.js App',
-               tabsName: [{
-                   name: "好友",
-                   isActive: true
-               }, {
-                   name: "群聊",
-                   isActive: false
-               }, {
-                   name: "设备",
-                   isActive: false
-               }, {
-                   name: "通讯录",
-                   isActive: false
-               }, {
-                   name: "公众号",
-                   isActive: false
-               }]
+               tabsName:[]
+
            }
        },
+       mounted(){
+           this.fetchData();
+
+       },
        methods: {
+           fetchData(){
+               this.$http.get('../static/data/data.json', {
+                   params: {
+                       OPT: '305'
+                   }
+               }).then(res => {
+                   this.tabsName=res.data.tabsName;
+                   console.log(this.tabsName);
+
+               },err =>{
+                   console.log('error')
+               });
+
+           },
            tabsSwitch: function(tabIndex) {
                var tabCardCollection = document.querySelectorAll(".tab-card"),
                    len = tabCardCollection.length;

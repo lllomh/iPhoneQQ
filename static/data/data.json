@@ -49,7 +49,23 @@
         "num":"0",
         "text":"标为未读"
       }
-    ]
+    ],
+     "tabsName": [{
+              "name": "好友",
+              "isActive": true
+        }, {
+              "name": "群聊",
+              "isActive": false
+         }, {
+              "name": "设备",
+              "isActive": false
+        }, {
+              "name": "通讯录",
+              "isActive": false
+        }, {
+              "name": "公众号",
+              "isActive": false
+       }]
 }
 
 
