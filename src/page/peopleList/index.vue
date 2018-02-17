@@ -39,6 +39,25 @@
                                     <span class="float-left fnd">{{list.name}}</span>
                                     <span class="float-right color suz"> {{list.Online}}/{{list.whole}} </span>
                                     <div class="clar"></div>
+                                    <ul>
+                                        <li class="acivLi">
+                                            <div class="mancent float-left">
+                                                <div class="ioco pop float-left">
+                                                    <div class="h">
+                                                        <img src="/static/img/qiuyue.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text float-left">
+                                                    <div class="u">
+                                                        <h3>q</h3>
+                                                        <p>qwewqewqe</p>
+                                                    </div>
+                                                </div>
+                                                <div class="clar"></div>
+                                            </div>
+                                            <div class="clar"></div>
+                                        </li>
+                                    </ul>
                                 </li>
 
                             </ul>
@@ -192,5 +211,114 @@
     }
     .fend_ul .suz{
         display: inline-block;margin-right: 2%;
+        font-size: 14px;
     }
+
+
+
+    .mancent{
+        width: 100%;
+        position: relative;
+    }
+    .bj{
+        background: #ff3b30;
+        float: right;
+        margin-right: -70%;
+        padding: 10% 4%;
+
+        border-bottom: solid 1px #dedfe0;
+        color: #fff;
+        font-size: 17px;
+        text-align: center;
+    }
+    .yd{
+        margin-right: -54%;
+        padding: 10% 10%;
+        background: #ff9c00;
+    }
+    .zd{
+        margin-right: -19%;
+        background: #c7c7cc;
+    }
+    .prompt{
+        position: absolute;
+        top:48%;
+        right: 4%;
+        background: #f74c31;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        border-radius: 50%;
+        display: block;
+        font-size: 12px;
+        text-align: center;
+        color: #fff;
+
+
+    }
+    .tmp li i{float:right;width:15%;text-align:center;background:#E2421B;color:#fff;}
+    .tmp li{
+
+    }
+    .swipeleft{transform:translateX(-70%);-webkit-transform:translateX(-70%);}
+
+    .section_list .h{
+        padding-left: 18%;
+        margin-top: 14%;
+        padding-bottom: 11%;
+        width: 50px;
+        height: 50px;
+    }
+    .ul li{
+        -webkit-transition:all 0.3s;transition:all 0.3s;
+    }
+    .ul li h3{
+        font-size: 18px;
+    }
+    .ioco{
+        width: 20%;
+    }
+    .pop .h img{
+        border-radius: 50%;
+    }
+    .text{
+        width: 60%;
+    }
+    .time{
+        width: 20%;
+    }
+    .section_list .h{
+        padding-left: 18%;
+        margin-top: 14%;
+        padding-bottom: 11%;
+        width: 50px;
+        height: 50px;
+    }
+    .section_list .h img{
+        width: 100%;
+    }
+
+    .text .u{
+        margin-left: 1%;
+        margin-top: 7%;
+    }
+    .text .u p{
+        font-size: 15px;
+        margin-top: 2%;
+        color: #868687;
+    }
+    .time .t{
+        text-align: right;
+        padding-right: 17%;
+        margin-top: 17%;
+        font-size: 12px;
+        color: #a1a1a1;
+    }
+    .udlie{
+        background: #dedfe0;height: 1px;width: 80%;float: right
+    }
+    .tmp li.acivLi:last-child .udlie{
+        width: 100%;
+    }
+
 </style>
