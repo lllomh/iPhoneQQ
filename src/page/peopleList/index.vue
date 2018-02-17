@@ -36,10 +36,10 @@
                             <ul class="ul fend_ul">
                                 <li v-for="(list,index) in friends">
                                     <span class="float-left color"> > </span>
-                                    <span class="float-left fnd">{{list.name}}</span>
+                                    <span class="float-left fnd" @click="tabbook(list)">{{list.name}}</span>
                                     <span class="float-right color suz"> {{list.lines}}/{{list.lenght}} </span>
                                     <div class="clar"></div>
-                                    <ul>
+                                    <ul v-if="list.isShow != false">
                                         <li class="acivLi" v-for="(chList,chIndx) in list.friendsList">
                                             <div class="mancent float-left">
                                                 <div class="ioco pop float-left">
@@ -152,7 +152,7 @@
                });
 
            },
-           tabsSwitch(tabIndex) {
+           tabsSwitch(tabIndex) {//选项卡
                var tabCardCollection = document.querySelectorAll(".tab-card"),
                    len = tabCardCollection.length;
                for(var i = 0; i < len; i++) {
@@ -162,12 +162,15 @@
                this.tabsName[tabIndex].isActive = true;
                tabCardCollection[tabIndex].style.display = "block";
            },
-           friendLits(){
+           friendLits(){//总数在线人数
                this.friends.forEach(function(value,index,array){
                    array[index].lenght=value.friendsList.length;
                    array[index].lines=value.friendsList.length;
                    console.log(array[index].lines);
                });
+           },
+           tabbook(list){//展开列表
+               list.isShow==false?list.isShow=true:list.isShow=false
            }
        }
    }
