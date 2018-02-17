@@ -232,7 +232,6 @@
         margin-right: auto;
         margin-top: 12%;
         visibility: hidden;
-
     }
     .span_atv span{
         background: red!important;
