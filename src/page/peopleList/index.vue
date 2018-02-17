@@ -140,15 +140,6 @@
                array[index].lenght=value.friendsList.length;
                array[index].lines=value.friendsList.length;
                console.log(array[index].lines);
-
-//               value.friendsList.forEach(function(chvalue,chindex,charray){
-//                           console.log(chvalue[index]);
-//                       });
-
-//           console.log(value);
-//               console.log(index);
-//               console.log();
-
            });
 
 
@@ -248,6 +239,7 @@
     .fend_ul .fnd{
         display: inline-block;
         margin-left: 2%;
+        width: 40%;
 
     }
     .fend_ul .suz{
