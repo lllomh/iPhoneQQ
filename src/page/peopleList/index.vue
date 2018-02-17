@@ -49,14 +49,34 @@
                                                 </div>
                                                 <div class="text float-left">
                                                     <div class="u">
-                                                        <h3>q</h3>
-                                                        <p>qwewqewqe</p>
+                                                        <h3>欧美婷</h3>
+                                                        <p>[Wifi在线]</p>
+                                                    </div>
+                                                </div>
+                                                <div class="clar"></div>
+                                            </div>
+                                            <div class="clar"></div>
+                                            <div class="udlie"></div>
+                                        </li>
+                                        <li class="acivLi">
+                                            <div class="mancent float-left">
+                                                <div class="ioco pop float-left">
+                                                    <div class="h">
+                                                        <img src="/static/img/qiuyue.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text float-left">
+                                                    <div class="u">
+                                                        <h3>欧美婷</h3>
+                                                        <p>[Wifi在线]</p>
                                                     </div>
                                                 </div>
                                                 <div class="clar"></div>
                                             </div>
                                             <div class="clar"></div>
                                         </li>
+                                        <div class="clar"></div>
+                                        <div class="udlie"></div>
                                     </ul>
                                 </li>
 
@@ -214,8 +234,6 @@
         font-size: 14px;
     }
 
-
-
     .mancent{
         width: 100%;
         position: relative;
@@ -263,7 +281,7 @@
     .swipeleft{transform:translateX(-70%);-webkit-transform:translateX(-70%);}
 
     .section_list .h{
-        padding-left: 18%;
+        padding-left: 2%;
         margin-top: 14%;
         padding-bottom: 11%;
         width: 50px;
@@ -276,7 +294,7 @@
         font-size: 18px;
     }
     .ioco{
-        width: 20%;
+        width: 18%;
     }
     .pop .h img{
         border-radius: 50%;
@@ -286,13 +304,6 @@
     }
     .time{
         width: 20%;
-    }
-    .section_list .h{
-        padding-left: 18%;
-        margin-top: 14%;
-        padding-bottom: 11%;
-        width: 50px;
-        height: 50px;
     }
     .section_list .h img{
         width: 100%;
