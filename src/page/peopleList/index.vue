@@ -135,15 +135,8 @@
            }
        },
        mounted(){
-
-           this.friends.forEach(function(value,index,array){
-               array[index].lenght=value.friendsList.length;
-               array[index].lines=value.friendsList.length;
-               console.log(array[index].lines);
-           });
-
-
            this.fetchData();
+           this.friendLits();
        },
        methods: {
            fetchData(){
@@ -168,6 +161,13 @@
                }
                this.tabsName[tabIndex].isActive = true;
                tabCardCollection[tabIndex].style.display = "block";
+           },
+           friendLits(){
+               this.friends.forEach(function(value,index,array){
+                   array[index].lenght=value.friendsList.length;
+                   array[index].lines=value.friendsList.length;
+                   console.log(array[index].lines);
+               });
            }
        }
    }
