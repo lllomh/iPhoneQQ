@@ -37,7 +37,7 @@
                                 <li v-for="(list,index) in friends">
                                     <span class="float-left color"> > </span>
                                     <span class="float-left fnd">{{list.name}}</span>
-                                    <span class="float-right color suz"> {{list.Online}}/{{list.lenght}} </span>
+                                    <span class="float-right color suz"> {{list.lines}}/{{list.lenght}} </span>
                                     <div class="clar"></div>
                                     <ul>
                                         <li class="acivLi" v-for="(chList,chIndx) in list.friendsList">
@@ -94,7 +94,8 @@
                            name :"欧美婷",
                            p:"[Wifi在线]",
                       }],
-                           lenght:0
+                           lenght:0,
+                           lines:0
                        },
                       {
                        name:"QQ网友",
@@ -106,7 +107,8 @@
                           name :"迷糊儿",
                           p:"[Wifi在线]",
                       }],
-                          lenght:0
+                          lenght:0,
+                          lines:0
                       },
                       {
                        name:"大学好友",
@@ -124,7 +126,8 @@
                        }
 
                       ],
-                          lenght:0
+                          lenght:0,
+                          lines:0
                       }
 
                ]
@@ -134,8 +137,9 @@
        mounted(){
 
            this.friends.forEach(function(value,index,array){
-               array[index].lenght=value.friendsList.length
-               console.log(array[index].lenght);
+               array[index].lenght=value.friendsList.length;
+               array[index].lines=value.friendsList.length;
+               console.log(array[index].lines);
 
 //               value.friendsList.forEach(function(chvalue,chindex,charray){
 //                           console.log(chvalue[index]);
