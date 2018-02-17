@@ -37,7 +37,7 @@
                                 <li v-for="(list,index) in friends">
                                     <span class="float-left color"> > </span>
                                     <span class="float-left fnd">{{list.name}}</span>
-                                    <span class="float-right color suz"> {{list.Online}}/{{list.whole}} </span>
+                                    <span class="float-right color suz"> {{list.Online}}/{{list.lenght}} </span>
                                     <div class="clar"></div>
                                     <ul>
                                         <li class="acivLi" v-for="(chList,chIndx) in list.friendsList">
@@ -93,8 +93,8 @@
                            src :"qiuyue.png",
                            name :"欧美婷",
                            p:"[Wifi在线]",
-                      }]
-
+                      }],
+                           lenght:0
                        },
                       {
                        name:"QQ网友",
@@ -103,10 +103,10 @@
                        isShow:false,
                        friendsList:[{
                           src :"qiuyue.png",
-                          name :"欧美婷",
+                          name :"迷糊儿",
                           p:"[Wifi在线]",
-                      }]
-
+                      }],
+                          lenght:0
                       },
                       {
                        name:"大学好友",
@@ -115,14 +115,16 @@
                        isShow:false,
                        friendsList:[{
                           src :"qiuyue.png",
-                          name :"欧美婷",
+                          name :"涣散撒",
                           p:"[Wifi在线]",
                       },{
                            src :"qiuyue.png",
-                           name :"欧美婷",
+                           name :"黄搜哇",
                            p:"[Wifi在线]",
-                       }]
+                       }
 
+                      ],
+                          lenght:0
                       }
 
                ]
@@ -130,6 +132,22 @@
            }
        },
        mounted(){
+
+           this.friends.forEach(function(value,index,array){
+               array[index].lenght=value.friendsList.length
+               console.log(array[index].lenght);
+
+//               value.friendsList.forEach(function(chvalue,chindex,charray){
+//                           console.log(chvalue[index]);
+//                       });
+
+//           console.log(value);
+//               console.log(index);
+//               console.log();
+
+           });
+
+
            this.fetchData();
        },
        methods: {
