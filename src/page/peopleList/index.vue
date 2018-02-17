@@ -35,7 +35,7 @@
                         <div class="tab-card" style="display: block">
                             <ul class="ul fend_ul">
                                 <li v-for="(list,index) in friends">
-                                    <span class="float-left color"> > </span>
+                                    <span class="float-left color">{{list.ioco}}</span>
                                     <span class="float-left fnd" @click="tabbook(list)">{{list.name}}</span>
                                     <span class="float-right color suz"> {{list.lines}}/{{list.lenght}} </span>
                                     <div class="clar"></div>
@@ -56,9 +56,10 @@
                                                 <div class="clar"></div>
                                             </div>
                                             <div class="clar"></div>
+                                            <div class="udlie"></div>
                                         </li>
                                         <div class="clar"></div>
-                                        <div class="udlie"></div>
+
                                     </ul>
                                 </li>
 
@@ -89,6 +90,7 @@
                       Online:3,
                       whole:8,
                       isShow:false,
+                      ioco:">",
                       friendsList:[{
                            src :"qiuyue.png",
                            name :"欧美婷",
@@ -102,6 +104,7 @@
                        Online:4,
                        whole:10,
                        isShow:false,
+                       ioco:">",
                        friendsList:[{
                           src :"qiuyue.png",
                           name :"迷糊儿",
@@ -115,6 +118,7 @@
                        Online:2,
                        whole:5,
                        isShow:false,
+                       ioco:">",
                        friendsList:[{
                           src :"qiuyue.png",
                           name :"涣散撒",
@@ -170,7 +174,13 @@
                });
            },
            tabbook(list){//展开列表
-               list.isShow==false?list.isShow=true:list.isShow=false
+               if(list.isShow==false){
+                   list.isShow=true;
+                   list.ioco="∨"
+               }else{
+                   list.isShow=false;
+                   list.ioco=">"
+               }
            }
        }
    }
