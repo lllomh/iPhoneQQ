@@ -40,35 +40,17 @@
                                     <span class="float-right color suz"> {{list.Online}}/{{list.whole}} </span>
                                     <div class="clar"></div>
                                     <ul>
-                                        <li class="acivLi">
+                                        <li class="acivLi" v-for="(chList,chIndx) in list.friendsList">
                                             <div class="mancent float-left">
                                                 <div class="ioco pop float-left">
                                                     <div class="h">
-                                                        <img src="/static/img/qiuyue.png" alt="">
+                                                        <img :src="`/static/img/${chList.src}`" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="text float-left">
                                                     <div class="u">
-                                                        <h3>欧美婷</h3>
-                                                        <p>[Wifi在线]</p>
-                                                    </div>
-                                                </div>
-                                                <div class="clar"></div>
-                                            </div>
-                                            <div class="clar"></div>
-                                            <div class="udlie"></div>
-                                        </li>
-                                        <li class="acivLi">
-                                            <div class="mancent float-left">
-                                                <div class="ioco pop float-left">
-                                                    <div class="h">
-                                                        <img src="/static/img/qiuyue.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="text float-left">
-                                                    <div class="u">
-                                                        <h3>欧美婷</h3>
-                                                        <p>[Wifi在线]</p>
+                                                        <h3>{{chList.name}}</h3>
+                                                        <p>{{chList.p}}</p>
                                                     </div>
                                                 </div>
                                                 <div class="clar"></div>
@@ -106,21 +88,40 @@
                       name:"特别关心",
                       Online:3,
                       whole:8,
-                      isShow:false
+                      isShow:false,
+                      friendsList:[{
+                           src :"qiuyue.png",
+                           name :"欧美婷",
+                           p:"[Wifi在线]",
+                      }]
 
                        },
                       {
                        name:"QQ网友",
                        Online:4,
                        whole:10,
-                       isShow:false
+                       isShow:false,
+                       friendsList:[{
+                          src :"qiuyue.png",
+                          name :"欧美婷",
+                          p:"[Wifi在线]",
+                      }]
 
                       },
                       {
                        name:"大学好友",
                        Online:2,
                        whole:5,
-                       isShow:false
+                       isShow:false,
+                       friendsList:[{
+                          src :"qiuyue.png",
+                          name :"欧美婷",
+                          p:"[Wifi在线]",
+                      },{
+                           src :"qiuyue.png",
+                           name :"欧美婷",
+                           p:"[Wifi在线]",
+                       }]
 
                       }
 
@@ -130,7 +131,6 @@
        },
        mounted(){
            this.fetchData();
-
        },
        methods: {
            fetchData(){
@@ -140,14 +140,13 @@
                    }
                }).then(res => {
                    this.tabsName=res.data.tabsName;
-                   console.log(this.tabsName.__proto__);
 
                },err =>{
                    console.log('error')
                });
 
            },
-           tabsSwitch: function(tabIndex) {
+           tabsSwitch(tabIndex) {
                var tabCardCollection = document.querySelectorAll(".tab-card"),
                    len = tabCardCollection.length;
                for(var i = 0; i < len; i++) {
