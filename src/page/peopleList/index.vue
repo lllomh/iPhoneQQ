@@ -263,42 +263,10 @@
         width: 100%;
         position: relative;
     }
-    .bj{
-        background: #ff3b30;
-        float: right;
-        margin-right: -70%;
-        padding: 10% 4%;
+    .man_content{
+        margin-top: 10px;
+    }
 
-        border-bottom: solid 1px #dedfe0;
-        color: #fff;
-        font-size: 17px;
-        text-align: center;
-    }
-    .yd{
-        margin-right: -54%;
-        padding: 10% 10%;
-        background: #ff9c00;
-    }
-    .zd{
-        margin-right: -19%;
-        background: #c7c7cc;
-    }
-    .prompt{
-        position: absolute;
-        top:48%;
-        right: 4%;
-        background: #f74c31;
-        width: 15px;
-        height: 15px;
-        line-height: 15px;
-        border-radius: 50%;
-        display: block;
-        font-size: 12px;
-        text-align: center;
-        color: #fff;
-
-
-    }
     .tmp li i{float:right;width:15%;text-align:center;background:#E2421B;color:#fff;}
     .tmp li{
 
@@ -327,9 +295,7 @@
     .text{
         width: 60%;
     }
-    .time{
-        width: 20%;
-    }
+
     .section_list .h img{
         width: 100%;
     }
