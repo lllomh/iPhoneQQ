@@ -84,7 +84,7 @@
            return {
                msg: 'Welcome to Your Vue.js App',
                tabsName:[],
-               friends:[
+               friends:[//测试数据
                        {
                       name:"特别关心",
                       Online:3,
