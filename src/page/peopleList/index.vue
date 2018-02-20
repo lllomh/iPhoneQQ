@@ -59,10 +59,8 @@
                                             <div class="udlie"></div>
                                         </li>
                                         <div class="clar"></div>
-
                                     </ul>
                                 </li>
-
                             </ul>
                         </div>
                         <div class="tab-card">2</div>
