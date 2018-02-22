@@ -19,7 +19,6 @@
                        <span class="float-left">创建群聊</span><span class="float-right color"> > </span>
                        <div class="clar"></div>
                    </li>
-
                 </ul>
                 <div class="content">
                     <ul class="ulsd tabs">
