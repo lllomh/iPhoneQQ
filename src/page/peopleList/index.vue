@@ -29,7 +29,6 @@
                         <ul style="clear: both"></ul>
                     </ul>
                     <div style="clear: both"></div>
-
                     <div class="man_content">
                         <div class="tab-card" style="display: block">
                             <ul class="ul fend_ul">
