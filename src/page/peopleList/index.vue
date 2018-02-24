@@ -82,7 +82,6 @@
                tabsName:[],
                friends:[]
 
-
            }
        },
        mounted(){
