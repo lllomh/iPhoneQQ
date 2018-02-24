@@ -113,6 +113,54 @@
         ],
         "lenght":0,
         "lines":0
+    }],
+  "qunliao":[{
+    "name":"置顶群聊",
+    "Online":3,
+    "whole":8,
+    "isShow":false,
+    "ioco":">",
+    "friendsList":[{
+      "src" :"qiuyue.png",
+      "name" :"欧美婷",
+      "p":"最近活跃:14.29"
+    }],
+    "lenght":0,
+    "lines":0
+  },
+    {
+      "name":"我创建的群聊",
+      "Online":4,
+      "whole":10,
+      "isShow":false,
+      "ioco":">",
+      "friendsList":[{
+        "src" :"qiuyue.png",
+        "name" :"迷糊儿",
+        "p":"最近活跃:14.29"
+      }],
+      "lenght":0,
+      "lines":0
+    },
+    {
+      "name":"我加入的群聊",
+      "Online":2,
+      "whole":5,
+      "isShow":false,
+      "ioco":">",
+      "friendsList":[{
+        "src" :"qiuyue.png",
+        "name" :"涣散撒",
+        "p":"最近活跃:14.29"
+      },{
+        "src" :"qiuyue.png",
+        "name" :"黄搜哇",
+        "p":"最近活跃:14.29"
+      }
+
+      ],
+      "lenght":0,
+      "lines":0
     }]
 
 }

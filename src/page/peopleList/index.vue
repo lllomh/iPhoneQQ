@@ -61,7 +61,37 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-card">2</div>
+                        <div class="tab-card">
+                            <ul class="ul fend_ul">
+                                <li v-for="(list,index) in qunliao">
+                                    <span class="float-left color">{{list.ioco}}</span>
+                                    <span class="float-left fnd" @click="tabbook(list)">{{list.name}}</span>
+                                    <span class="float-right color suz"> {{list.lines}}/{{list.lenght}} </span>
+                                    <div class="clar"></div>
+                                    <ul v-if="list.isShow != false">
+                                        <li class="acivLi" v-for="(chList,chIndx) in list.friendsList">
+                                            <div class="mancent float-left">
+                                                <div class="ioco pop float-left">
+                                                    <div class="h">
+                                                        <img :src="`/static/img/${chList.src}`" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text float-left">
+                                                    <div class="u">
+                                                        <h3>{{chList.name}}</h3>
+                                                        <p>{{chList.p}}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="clar"></div>
+                                            </div>
+                                            <div class="clar"></div>
+                                            <div class="udlie"></div>
+                                        </li>
+                                        <div class="clar"></div>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="tab-card">3</div>
                         <div class="tab-card">4</div>
                         <div class="tab-card">5</div>
@@ -80,13 +110,17 @@
            return {
                msg: 'Welcome to Your Vue.js App',
                tabsName:[],
-               friends:[]
+               friends:[],
+               qunliao:[]
 
            }
        },
        mounted(){
            this.fetchData();
+       },
+       updated(){
            this.friendLits();
+           console.log( this.friends);
        },
        methods: {
            fetchData(){
@@ -97,7 +131,8 @@
                }).then(res => {
                    this.tabsName=res.data.tabsName;
                    this.friends=res.data.friends;
-                   console.log(res.data)
+                   this.qunliao=res.data.qunliao;
+                   // console.log(res.data)
 
                },err =>{
                    console.log('error')
@@ -115,7 +150,14 @@
                tabCardCollection[tabIndex].style.display = "block";
            },
            friendLits(){//总数在线人数
+
                this.friends.forEach(function(value,index,array){
+                   array[index].lenght=value.friendsList.length;
+                   array[index].lines=value.friendsList.length;
+                   console.log(array[index].lines);
+               });
+
+               this.qunliao.forEach(function(value,index,array){
                    array[index].lenght=value.friendsList.length;
                    array[index].lines=value.friendsList.length;
                    console.log(array[index].lines);
