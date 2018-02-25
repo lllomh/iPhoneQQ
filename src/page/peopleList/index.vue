@@ -120,7 +120,6 @@
        },
        updated(){
            this.friendLits();
-           console.log( this.friends);
        },
        methods: {
            fetchData(){
@@ -154,13 +153,11 @@
                this.friends.forEach(function(value,index,array){
                    array[index].lenght=value.friendsList.length;
                    array[index].lines=value.friendsList.length;
-                   console.log(array[index].lines);
                });
 
                this.qunliao.forEach(function(value,index,array){
                    array[index].lenght=value.friendsList.length;
                    array[index].lines=value.friendsList.length;
-                   console.log(array[index].lines);
                });
            },
            tabbook(list){//展开列表
