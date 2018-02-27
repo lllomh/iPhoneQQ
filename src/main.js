@@ -10,7 +10,6 @@ import VueResource from 'vue-resource'
 Vue.use(VueResource) //后台数据
 Vue.use(Mint); //注册 mint插件
 
-
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
