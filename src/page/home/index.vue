@@ -218,7 +218,6 @@
         text-align: center;
         color: #fff;
 
-
     }
     .tmp li i{float:right;width:15%;text-align:center;background:#E2421B;color:#fff;}
     .tmp li{

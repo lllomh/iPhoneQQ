@@ -39,10 +39,9 @@
 </template>
 
 
-
 <style>
 
-    @import url('../style/style.css');
+    @import url('../style/style.css');/**全局*/
 .header{
     background: #fff;
 
