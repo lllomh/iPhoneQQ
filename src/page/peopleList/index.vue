@@ -122,7 +122,7 @@
            this.friendLits();
        },
        methods: {
-           fetchData(){
+           fetchData(){  //数据文件读取
                this.$http.get('../static/data/data.json', {
                    params: {
                        OPT: '305'
