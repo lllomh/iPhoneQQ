@@ -92,7 +92,40 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-card">3</div>
+                        <div class="tab-card">
+
+                            <!--index 列表 备份部分 start-->
+                            <li class="acivLi" v-for="(key,index) in list" ref="ss">
+                                <div class="mancent float-left">
+                                    <div class="ioco pop float-left">
+                                        <div class="h">
+                                            <img :src="`/static/img/${key.src}`" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text float-left">
+                                        <div class="u">
+                                            <h3>{{key.name}}</h3>
+                                            <p>{{key.p}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="time float-left">
+                                        <div class="t">
+                                            <time>{{key.time}}</time>
+                                        </div>
+                                    </div>
+                                    <div class="clar"></div>
+                                    <span class="prompt" v-if="key.num != 0">{{key.num}}</span>
+                                </div>
+                                <div class="bj float-left" @click="del('',index)">删除</div>
+                                <div class="bj yd float-left" @click="reade(index)">{{key.text}}</div>
+                                <div class="bj zd float-left" @click="tops(index)">置顶</div>
+                                <div class="clar"></div>
+                                <div class="udlie"></div>
+                                <div class="clar"></div>
+                            </li>
+                            <!--index 列表 备份部分 end-->
+
+                        </div>
                         <div class="tab-card">44</div>
                         <div class="tab-card">5</div>
 
@@ -112,7 +145,6 @@
                tabsName:[],
                friends:[],
                qunliao:[]
-
            }
        },
        mounted(){
