@@ -117,6 +117,7 @@
                                     <span class="prompt" v-if="key.num != 0">{{key.num}}</span>
                                 </div>
                                 <div class="bj float-left" @click="del('',index)">删除</div>
+
                                 <div class="bj yd float-left" @click="reade(index)">{{key.text}}</div>
                                 <div class="bj zd float-left" @click="tops(index)">置顶</div>
                                 <div class="clar"></div>
@@ -147,7 +148,7 @@
                qunliao:[]
            }
        },
-       mounted(){
+       mounted(){//执行
            this.fetchData();
        },
        updated(){
