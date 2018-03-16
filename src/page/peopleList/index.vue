@@ -104,7 +104,7 @@
                                     </div>
                                     <div class="text float-left">
                                         <div class="u">
-                                            <h3>{{key.name}}</h3>
+                                            <h3>test</h3>
                                             <p>{{key.p}}</p>
                                         </div>
                                     </div>
