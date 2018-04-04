@@ -41,7 +41,7 @@
 
 <style>
 
-    @import url('../style/style.css');/**全局*/
+    @import url('../style/style.css');/**全局**/
 .header{
     background: #fff;
 
