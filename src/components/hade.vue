@@ -106,8 +106,6 @@
         padding: 1.6% 0;
         padding-left: 7%;
         border-radius: 3px;
-
-
     }
 
 </style>
