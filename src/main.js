@@ -8,7 +8,7 @@ import Mint from "mint-ui"
 import "../static/mint-ui/style.css"
 import VueResource from 'vue-resource'
 Vue.use(VueResource) //后台数据
-Vue.use(Mint); //注册 mint插件
+Vue.use(Mint); //注册 mint插件//后期自己添加
 
 Vue.config.productionTip = false;
 
