@@ -61,7 +61,7 @@
         width: 40%;
     }
   .loimg .y{
-      margin-top:15%;
+      margin-top:12%;
       margin-left: 7%;
       margin-bottom: 2%;
       width: 35px;

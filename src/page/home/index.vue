@@ -85,8 +85,8 @@
             this.fetchData();
 
         },
-        updated(){
-            this.leftoch();
+      updated(){
+          this.leftoch();
         },
         methods: {
             fetchData(){
@@ -114,34 +114,38 @@
                 }, 1500);
             },
             leftoch(){
-                    var $this=this;														//将$this保存 区分以下触发事件的this
-                    var container =this.$refs.ss;
+                  var $this=this;														//将$this保存 区分以下触发事件的this
+                  var container =this.$refs.ss;
+
+                  if(container){
                     var int =container.length;
 
-
                     for(var i = 0; i < int; i++){                          //为每个特定DOM元素绑定touchstart touchmove时间监听 判断滑动方向
-                        var x,  X;
-                        container[i].addEventListener('touchstart', function(event) {   //记录初始触控点横坐标
-                            x = event.changedTouches[0].pageX;
-                        });
-                        container[i].addEventListener('touchmove', function(event){
-                            X = event.changedTouches[0].pageX;                          //记录当前触控点横坐标
-                            if($this.expansion){                                       //判断是否展开，如果展开则收起
-                                $this.expansion.className = "";
-                            }
-                            if(X - x > 10){                                             //右滑
-                                this.className = "acivLi";
-                                container[0].className="active";                        //右滑收起
-                            }
-                            if(x - X > 10){                                             //左滑
-                                this.className = "acivLi swipeleft";                           //左滑展开
-                                $this.expansion = this;
+                      var x,  X;
+                      container[i].addEventListener('touchstart', function(event) {   //记录初始触控点横坐标
+                        x = event.changedTouches[0].pageX;
+                      });
+                      container[i].addEventListener('touchmove', function(event){
+                        X = event.changedTouches[0].pageX;                          //记录当前触控点横坐标
+                        if($this.expansion){                                       //判断是否展开，如果展开则收起
+                          $this.expansion.className = "";
+                        }
+                        if(X - x > 10){                                             //右滑
+                          this.className = "acivLi";
+                          container[0].className="active";                        //右滑收起
+                        }
+                        if(x - X > 10){                                             //左滑
+                          this.className = "acivLi swipeleft";                           //左滑展开
+                          $this.expansion = this;
 
-                            }
-                        });
+                        }
+                      });
 
                     }
                     container[0].className="active"
+                  }
+
+
 
             },
             del(idx){  //删除

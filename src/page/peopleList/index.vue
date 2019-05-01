@@ -145,7 +145,8 @@
                msg: 'Welcome to Your Vue.js App',
                tabsName:[],
                friends:[],
-               qunliao:[]
+               qunliao:[],
+                list:''
            }
        },
        mounted(){//执行
