@@ -71,11 +71,11 @@ npm run build
 
 #### (demo使用的是模拟数据，数据是固定的，只做为样式的演示，要获取真实的数据，请clone代码并运行);
 
-[查看demo请戳这里](http://app.gonghaibo.cn/)（请用chrome手机模式预览）
+[查看demo请戳这里](http://app.lllomh.cn/)（请用chrome手机模式预览）
    
 ### 移动端扫描下方二维码
 
-![](http://app.gonghaibo.cn/static/img/fnx.png)
+![](http://app.lllomh.cn/static/img/fnx.png)
 
 
 
@@ -126,7 +126,7 @@ npm run build
 
 ### 整体演示(半成品'正在更新中')
 
-<img src="http://app.gonghaibo.cn/static/img/yanshi/GIF.gif" width="365" height="619"/>
+<img src="http://app.lllomh.cn/static/img/yanshi/GIF.gif" width="365" height="619"/>
 
 
 
