@@ -11,7 +11,7 @@
        <header>
            <div class="header">
                <div class="h">
-                    <div class="loimg float-left">
+                    <div class="loimg float-left" @click="$router.push('/profile')">
                         <div class="y">
                             <img src="/static/img/logo.jpg" alt="">
                         </div>
@@ -60,6 +60,9 @@
   .header .h .lojia{
         width: 40%;
     }
+  .loimg {
+      cursor: pointer;
+  }
   .loimg .y{
       margin-top:12%;
       margin-left: 7%;

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <hede></hede>
+    <hede v-if="!isFullScreenPage"></hede>
     <transition name="fade">
       <router-view class="man"></router-view>
     </transition>
-    <fote></fote>
+    <fote v-if="!isFullScreenPage"></fote>
   </div>
 </template>
 
@@ -17,6 +17,12 @@
     components:{
       hede,
       fote
+    },
+    computed: {
+      isFullScreenPage() {
+        const name = this.$route.name
+        return ['chat', 'profile', 'friend', 'space'].indexOf(name) !== -1
+      }
     }
   }
 

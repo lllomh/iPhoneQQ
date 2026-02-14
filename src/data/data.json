@@ -1,56 +1,27 @@
 {
-
-    "data":[
-      {
-        "src":"qunzhu.png",
-        "name":"群助手",
-        "p":"javascript技术交流:[图片]",
-        "time":"昨天",
-        "num":"0",
-        "text":"标为未读"
-      },
-      {
-        "src":"renyou.png",
-        "name":"我的电脑",
-        "p":"图片]IMG_1195_JPG",
-        "time":"前天",
-        "num":"0",
-        "text":"标为未读"
-      },
-      {
-        "src":"mycomu.png",
-        "name":"我的其他QQ账号",
-        "p":"暂无消息",
-        "time":"昨天",
-        "num":"0",
-        "text":"标为未读"
-      },
-      {
-        "src":"qiuyue.png",
-        "name":"秋月",
-        "p":"[QQ电话]未接听,点击回拨",
-        "time":"星期二",
-        "num":"0",
-        "text":"标为未读"
-      },
-      {
-        "src":"hu.jpg",
-        "name":"胡燕杰",
-        "p":"在不在",
-        "time":"01-07",
-        "num":"0",
-        "text":"标为未读"
-      },
-      {
-        "src":"qiuyue.png",
-        "name":"秋丹",
-        "p":"好",
-        "time":"01-02",
-        "num":"0",
-        "text":"标为未读"
-      }
-    ]
-
+  "list": [
+    {"src": "qunzhu.png", "name": "群助手", "p": "javascript技术交流:[图片]", "time": "昨天", "num": "0", "text": "标为未读"},
+    {"src": "renyou.png", "name": "我的电脑", "p": "图片]IMG_1195_JPG", "time": "前天", "num": "0", "text": "标为未读"},
+    {"src": "mycomu.png", "name": "我的其他QQ账号", "p": "暂无消息", "time": "昨天", "num": "0", "text": "标为未读"},
+    {"src": "qiuyue.png", "name": "秋月", "p": "[QQ电话]未接听,点击回拨", "time": "星期二", "num": "0", "text": "标为未读"},
+    {"src": "hu.jpg", "name": "胡燕杰", "p": "在不在", "time": "01-07", "num": "0", "text": "标为未读"},
+    {"src": "qiuyue.png", "name": "秋丹", "p": "好", "time": "01-02", "num": "0", "text": "标为未读"}
+  ],
+  "tabsName": [
+    {"name": "好友", "isActive": true},
+    {"name": "群聊", "isActive": false},
+    {"name": "设备", "isActive": false},
+    {"name": "通讯录", "isActive": false},
+    {"name": "公众号", "isActive": false}
+  ],
+  "friends": [
+    {"name": "特别关心", "Online": 3, "whole": 8, "isShow": false, "ioco": ">", "friendsList": [{"src": "qiuyue.png", "name": "欧美婷", "p": "[Wifi在线]"}], "lenght": 0, "lines": 0},
+    {"name": "QQ网友", "Online": 4, "whole": 10, "isShow": false, "ioco": ">", "friendsList": [{"src": "qiuyue.png", "name": "迷糊儿", "p": "[Wifi在线]"}], "lenght": 0, "lines": 0},
+    {"name": "大学好友", "Online": 2, "whole": 5, "isShow": false, "ioco": ">", "friendsList": [{"src": "qiuyue.png", "name": "涣散撒", "p": "[Wifi在线]"}, {"src": "qiuyue.png", "name": "黄搜哇", "p": "[Wifi在线]"}], "lenght": 0, "lines": 0}
+  ],
+  "qunliao": [
+    {"name": "置顶群聊", "Online": 3, "whole": 8, "isShow": false, "ioco": ">", "friendsList": [{"src": "qiuyue.png", "name": "欧美婷", "p": "最近活跃:14.29"}], "lenght": 0, "lines": 0},
+    {"name": "我创建的群聊", "Online": 4, "whole": 10, "isShow": false, "ioco": ">", "friendsList": [{"src": "qiuyue.png", "name": "迷糊儿", "p": "最近活跃:14.29"}], "lenght": 0, "lines": 0},
+    {"name": "我加入的群聊", "Online": 2, "whole": 5, "isShow": false, "ioco": ">", "friendsList": [{"src": "qiuyue.png", "name": "涣散撒", "p": "最近活跃:14.29"}, {"src": "qiuyue.png", "name": "黄搜哇", "p": "最近活跃:14.29"}], "lenght": 0, "lines": 0}
+  ]
 }
-
-

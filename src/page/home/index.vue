@@ -14,7 +14,7 @@
             <div class="y">
                    <ul class="tmp ul">
                     <li class="acivLi" v-for="(key,index) in list" ref="ss">
-                       <div class="mancent float-left">
+                       <div class="mancent float-left" @click="goChat(key)">
                         <div class="ioco pop float-left">
                             <div class="h">
                                 <img :src="`/static/img/${key.src}`" alt="">
@@ -90,7 +90,7 @@
         },
         methods: {
             fetchData(){
-                this.$http.get('../static/data/data.json', {
+                this.$http.get('/static/data/data.json', {
                     params: {
                         OPT: '305'
                     }
@@ -172,6 +172,9 @@
                 this.list.splice(0,0,(this.list[id]));
                 this.list.splice(id+1, 1);
                 container[id].className="acivLi";
+            },
+            goChat(item) {
+                this.$router.push({ path: '/chat', query: { name: item.name, src: item.src } });
             }
 
     }

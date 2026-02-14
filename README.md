@@ -15,7 +15,7 @@ vue2.0  + vue-resource + vue-router + webpack + ES6/7 + svg
 
 # 项目运行
 
-#### 注意：由于涉及 ES6/7 等新属性，nodejs 必须是 6.0 以上版本 ，node 7 是测试版，有可能会出问题，建议使用 node 6 稳定版 😱
+#### 注意：由于涉及 ES6/7 等新属性，Node.js 需 6.0 以上版本（建议使用 Node 10+ 或 14+ LTS）
 
 ```
 git clone https://github.com/lllomh/iPhoneQQ.git 
@@ -30,7 +30,7 @@ npm install
 ```
 npm run dev
 
-访问 http://www.qq.com:8080   这里要配置一下 host / 要么就要改掉 config/index 中的地址改回 localhost. 我是为了手机代理方便改了网址.
+访问 http://localhost:8080  （默认已改为 localhost，无需改 hosts。手机调试时可把 config/index.js 里 host 改为本机 IP）
 ```
 
 
@@ -87,13 +87,13 @@ npm run build
 - [x] 消息删除 -- 完成
 - [x] 消息标记未读已读 -- 完成
 - [x] 下拉刷新 -- 完成
-- [ ] 好友列表 -- 未完成
-- [ ] 好友列表展开 -- 未完成
-- [ ] 聊天界面 -- 未完成
-- [ ] 修改个人资料 -- 未完成
-- [ ] 好友资料详情 -- 未完成
-- [ ] 动态界面 -- 未完成
-- [ ] QQ空间模块 -- 未完成
+- [x] 好友列表 -- 完成
+- [x] 好友列表展开/收起 -- 完成
+- [x] 聊天界面 -- 完成（点击消息或好友进入，支持发送模拟回复）
+- [x] 修改个人资料 -- 完成（点击顶部头像进入，可编辑昵称/签名/性别，保存到本地）
+- [x] 好友资料详情 -- 完成（聊天页点击对方昵称、好友列表点「资料」进入，可发消息）
+- [x] 动态界面 -- 完成（底部「动态」tab，列表展示、点赞，可进入个人资料）
+- [x] QQ空间模块 -- 完成（个人资料里「我的QQ空间」进入，说说/相册/访客 tab）
 
 
 
@@ -148,7 +148,17 @@ npm run build
 |   |-- page
 |       |-- home                     // 消息列表页
 |		  	|--index
-|       |-- peoplelist               // 好友列表页
+|       |-- peopleList               // 好友列表页
+|		  |--index
+|       |-- chat                     // 聊天页
+|		  |--index
+|       |-- profile                  // 个人资料编辑
+|		  |--index
+|       |-- friend                   // 好友资料详情
+|		  |--index
+|       |-- moments                  // 动态
+|		  |--index
+|       |-- space                    // QQ空间
 |		  |--index
 |
 |   |-- router                       // 路由配置

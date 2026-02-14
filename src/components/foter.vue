@@ -26,7 +26,7 @@
                      </div>
                      <div class="right_msg float-left q_width">
                          <div class="q">
-                             <img src="/static/img/xingxing.png" alt="">
+                             <router-link to="/moments"><img src="/static/img/xingxing.png" alt=""></router-link>
                          </div>
                      </div>
                     <div class="clar"></div>

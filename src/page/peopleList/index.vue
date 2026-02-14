@@ -35,11 +35,11 @@
                                 <li v-for="(list,index) in friends">
                                     <span class="float-left color">{{list.ioco}}</span>
                                     <span class="float-left fnd" @click="tabbook(list)">{{list.name}}</span>
-                                    <span class="float-right color suz"> {{list.lines}}/{{list.lenght}} </span>
+                                    <span class="float-right color suz"> {{list.lines}}/{{list.friendsList.length}} </span>
                                     <div class="clar"></div>
                                     <ul v-if="list.isShow != false">
-                                        <li class="acivLi" v-for="(chList,chIndx) in list.friendsList">
-                                            <div class="mancent float-left">
+                                        <li class="acivLi" v-for="(chList,chIndx) in list.friendsList" :key="chIndx">
+                                            <div class="mancent float-left" @click="goChat(chList)">
                                                 <div class="ioco pop float-left">
                                                     <div class="h">
                                                         <img :src="`/static/img/${chList.src}`" alt="">
@@ -51,6 +51,7 @@
                                                         <p>{{chList.p}}</p>
                                                     </div>
                                                 </div>
+                                                <span class="friend-info-link" @click.stop="goToFriend(chList)">资料</span>
                                                 <div class="clar"></div>
                                             </div>
                                             <div class="clar"></div>
@@ -66,11 +67,11 @@
                                 <li v-for="(list,index) in qunliao">
                                     <span class="float-left color">{{list.ioco}}</span>
                                     <span class="float-left fnd" @click="tabbook(list)">{{list.name}}</span>
-                                    <span class="float-right color suz"> {{list.lines}}/{{list.lenght}} </span>
+                                    <span class="float-right color suz"> {{list.lines}}/{{list.friendsList.length}} </span>
                                     <div class="clar"></div>
                                     <ul v-if="list.isShow != false">
-                                        <li class="acivLi" v-for="(chList,chIndx) in list.friendsList">
-                                            <div class="mancent float-left">
+                                        <li class="acivLi" v-for="(chList,chIndx) in list.friendsList" :key="chIndx">
+                                            <div class="mancent float-left" @click="goChat(chList)">
                                                 <div class="ioco pop float-left">
                                                     <div class="h">
                                                         <img :src="`/static/img/${chList.src}`" alt="">
@@ -82,6 +83,7 @@
                                                         <p>{{chList.p}}</p>
                                                     </div>
                                                 </div>
+                                                <span class="friend-info-link" @click.stop="goToFriend(chList)">资料</span>
                                                 <div class="clar"></div>
                                             </div>
                                             <div class="clar"></div>
@@ -93,41 +95,20 @@
                             </ul>
                         </div>
                         <div class="tab-card">
-
-                            <!--index 列表 备份部分 start-->
-                            <li class="acivLi" v-for="(key,index) in list" ref="ss">
-                                <div class="mancent float-left">
-                                    <div class="ioco pop float-left">
-                                        <div class="h">
-                                            <img :src="`/static/img/${key.src}`" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="text float-left">
-                                        <div class="u">
-                                            <h3>test</h3>
-                                            <p>{{key.p}}</p>
-                                        </div>
-                                    </div>
-                                    <div class="time float-left">
-                                        <div class="t">
-                                            <time>{{key.time}}</time>
-                                        </div>
-                                    </div>
-                                    <div class="clar"></div>
-                                    <span class="prompt" v-if="key.num != 0">{{key.num}}</span>
-                                </div>
-                                <div class="bj float-left" @click="del('',index)">删除</div>
-
-                                <div class="bj yd float-left" @click="reade(index)">{{key.text}}</div>
-                                <div class="bj zd float-left" @click="tops(index)">置顶</div>
-                                <div class="clar"></div>
-                                <div class="udlie"></div>
-                                <div class="clar"></div>
-                            </li>
-                            <!--index 列表 备份部分 end-->
+                            <ul class="ul fend_ul">
+                                <li class="device-tip">设备列表（可在此扩展）</li>
+                            </ul>
                         </div>
-                        <div class="tab-card">44</div>
-                        <div class="tab-card">5</div>
+                        <div class="tab-card">
+                            <ul class="ul fend_ul">
+                                <li class="device-tip">通讯录（可在此扩展）</li>
+                            </ul>
+                        </div>
+                        <div class="tab-card">
+                            <ul class="ul fend_ul">
+                                <li class="device-tip">公众号（可在此扩展）</li>
+                            </ul>
+                        </div>
 
                     </div>
                 </div>
@@ -156,7 +137,7 @@
        },
        methods: {
            fetchData(){  //数据文件读取
-               this.$http.get('../static/data/data.json', {
+               this.$http.get('/static/data/data.json', {
                    params: {
                        OPT: '305'
                    }
@@ -201,6 +182,12 @@
                    list.isShow=false;
                    list.ioco=">"
                }
+           },
+           goChat(item) {
+               this.$router.push({ path: '/chat', query: { name: item.name, src: item.src } });
+           },
+           goToFriend(item) {
+               this.$router.push({ path: '/friend', query: { name: item.name, src: item.src, status: item.p || '[在线]' } });
            }
        }
    }
@@ -341,6 +328,21 @@
     }
     .tmp li.acivLi:last-child .udlie{
         width: 100%;
+    }
+    .device-tip {
+        padding: 20px;
+        color: #868687;
+        font-size: 14px;
+        text-align: center;
+    }
+    .friend-info-link {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 13px;
+        color: #3ca8fe;
+        cursor: pointer;
     }
 
 </style>

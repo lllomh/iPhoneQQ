@@ -13,7 +13,7 @@ module.exports = {
     proxyTable: {},
 
     // Various Dev Server settings
-    host: 'www.qq.com', // can be overwritten by process.env.HOST
+    host: 'localhost', // 本地开发用 localhost；手机调试可改为本机 IP 或配置 hosts 如 www.qq.com
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
