@@ -1,4 +1,4 @@
-<h1 align="center">iPhoneQQ</h1>
+<h1 align="center">IPhoneQQ</h1>
 
 <p align="center">基于 Vue 2.0 的仿手机 QQ 移动端项目</p>
 
