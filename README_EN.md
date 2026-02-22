@@ -1,3 +1,5 @@
+[中文](README.md)
+
 # Introduction
 
 This is a Vue 2.0 project that simulates the mobile QQ app — a beginner's exploration into frontend development. QQ was chosen because it has a rich set of interactions, making it a great practice target. The project is still being improved in my spare time, built little by little every day.
