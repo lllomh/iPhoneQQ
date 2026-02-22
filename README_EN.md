@@ -1,4 +1,12 @@
-[中文](README.md)
+<h1 align="center">iPhoneQQ</h1>
+
+<p align="center">A Vue 2.0 mobile app simulating the QQ experience</p>
+
+<p align="center">
+  <a href="README.md">简体中文</a> · <a href="README_EN.md">English</a>
+</p>
+
+---
 
 # Introduction
 
